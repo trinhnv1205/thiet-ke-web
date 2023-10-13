@@ -1,0 +1,341 @@
+<div class="slider-container">
+  <div class="slide fade">
+    <img class="slide-image"
+      src="{{ url_for('static', filename='img/silde7.jpg') }}">
+    <div class="slide-content">
+      <h3 class="slide-title">Quần thể du lịch sinh thái Tràng An</h3>
+      <p class="slide-desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, necessitatibus.
+      </p>
+      <a href="" class="slide-btn">
+        button <ion-icon name="arrow-forward-circle"></ion-icon>
+      </a>
+    </div>
+    <div class="slide-number-container">
+      <p class="slider-number">01</p>
+      <hr>
+      <p class="slider-number">05</p>
+    </div>
+  </div>
+
+  <div class="slide fade">
+    <img class="slide-image"
+      src="{{ url_for('static', filename='img/silde5.png') }}">
+    <div class="slide-content">
+      <h3 class="slide-title">Lên Hà Giang ngắm hoa Tam Giác Mạch mùa thu</h3>
+      <p class="slide-desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, necessitatibus.
+      </p>
+      <a href="" class="slide-btn">
+        button <ion-icon name="arrow-forward-circle"></ion-icon>
+      </a>
+    </div>
+    <div class="slide-number-container">
+      <p class="slider-number">02</p>
+      <hr>
+      <p class="slider-number">05</p>
+    </div>
+  </div>
+
+  <div class="slide fade">
+    <img class="slide-image"
+      src="{{ url_for('static', filename='img/silde9.jpg') }}">
+    <div class="slide-content">
+      <h3 class="slide-title">Phố Cổ Hoa Lưu Về Đêm </h3>
+      <p class="slide-desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, necessitatibus.
+      </p>
+      <a href="" class="slide-btn">
+        button <ion-icon name="arrow-forward-circle"></ion-icon>
+      </a>
+    </div>
+    <div class="slide-number-container">
+      <p class="slider-number">03</p>
+      <hr>
+      <p class="slider-number">05</p>
+    </div>
+  </div>
+
+
+  <div class="slide fade">
+    <img class="slide-image"
+      src="{{ url_for('static', filename='img/silde12.jpg') }}">
+    <div class="slide-content">
+      <h3 class="slide-title">Thành phố trong sương Đà Lạt </h3>
+      <p class="slide-desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, necessitatibus.
+      </p>
+      <a href="" class="slide-btn">
+        button <ion-icon name="arrow-forward-circle"></ion-icon>
+      </a>
+    </div>
+    <div class="slide-number-container">
+      <p class="slider-number">04</p>
+      <hr>
+      <p class="slider-number">05</p>
+    </div>
+  </div>
+
+  <div class="slide fade">
+    <img class="slide-image"
+      src="{{ url_for('static', filename='img/silde13.jpg') }}">
+    <div class="slide-content">
+      <h3 class="slide-title">Hồ Hoàn Kiếm được ví như trái tim của thủ đô </h3>
+      <p class="slide-desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, necessitatibus.
+      </p>
+      <a href="" class="slide-btn">
+        button <ion-icon name="arrow-forward-circle"></ion-icon>
+      </a>
+    </div>
+    <div class="slide-number-container">
+      <p class="slider-number">05</p>
+      <hr>
+      <p class="slider-number">05</p>
+    </div>
+  </div>
+  <!-- Next and previous buttons -->
+  <div class="slider-nav">
+    <a class="slider-nav-btn" onclick="plusSlides(-1)">
+      <ion-icon name="caret-back-outline"></ion-icon>
+    </a>
+    <a class="slider-nav-btn" onclick="plusSlides(1)">
+      <ion-icon name="caret-forward-outline"></ion-icon>
+    </a>
+  </div>
+
+  <!-- The dots/circles -->
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+</div>
+
+<div style="margin-top: 30rem;"></div>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    text-decoration: none;
+  }
+
+  .slider-container {
+    width: 100%;
+    top: 0;
+    z-index: -9;
+    position: absolute;
+  }
+
+  .slide {
+    width: 100%;
+    display: none;
+  }
+
+  .slide-image {
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+
+  .slide-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .slide-title {
+    width: 100%;
+    max-width: 50rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  .slide-desc {
+    width: 100%;
+    max-width: 50rem;
+    color: lightgray;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .slide-btn {
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    transition: ease 0.3s;
+  }
+
+  .slide-btn:hover {
+    gap: 1rem;
+  }
+
+  .slide-number-container {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 5;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: rgba(211, 211, 211, 0.788);
+    letter-spacing: 0.2rem;
+  }
+
+  .slide-number-container hr {
+    width: 3rem;
+    transform: rotate(130deg);
+    border-color: rgba(211, 211, 211, 0.788);
+  }
+
+  .slider-nav {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .slider-nav-btn {
+    cursor: pointer;
+    background-color: rgba(211, 211, 211, 0.226);
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.1s;
+  }
+
+  .slider-nav-btn:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .dot-container {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    background-color: rgba(211, 211, 211, 0.226);
+    border-radius: 50%;
+    display: inline-block;
+    transition: ease 0.1s;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: white;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration:0.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.8;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+<script>let slideIndex = 1;
+  const slides = document.getElementsByClassName("slide");
+  const dots = document.getElementsByClassName("dot");
+
+  // Function to show a specific slide
+  function showSlides(n) {
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+
+    // Hide all slides
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    // Remove the "active" class from all dots
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    // Display the current slide and mark its corresponding dot as active
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+
+  // Function to advance to the next slide
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  // Function to navigate to a specific slide
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
+
+  // Automatically advance to the next slide every 3 seconds (3000 milliseconds)
+  setInterval(function () {
+    plusSlides(1);
+  }, 5000);
+
+  // Initialize the slider
+  showSlides(slideIndex);
+</script>
