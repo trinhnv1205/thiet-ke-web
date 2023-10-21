@@ -1,450 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web du lich</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.js"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/main.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-</head>
-
-<body>
-  <div
-  class="d-flex bg-transparent text-white justify-content-between font-size-14 px-5"
->
-  <ul>
-    <li>Email: oanhvu1503@gmail.com</li>
-    <li>Sdt:09887237361</li>
-  </ul>
-  <ul class="flex-row">
-    <li><a href="dangky.html">Đăng ký</a></li>
-    <li><a href="dangnhap.html">Đăng nhập</a></li>
-  </ul>
-</div>
-
-<div class="d-flex text-white justify-content-between">
-  <div class="d-flex align-items-center">
-    <img
-      id="logo"
-      class="border mx-5"
-      src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/design/discover/mascot-logo-design/mascot-logo-design_fb-img_1200x800.jpg"
-      alt=""
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.css"
     />
-    <!-- <span class="font-size-18">ĐÔNG Á TOURIST</span> -->
-  </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-  <div class="d-flex flex-column">
-    <ul class="d-flex justify-content-end margin-right-15 padding-5">
-      <li><a href="index.html">Trang chủ</a></li>
-      <li><a href="mienbac.html">Miền Bắc</a></li>
-      <li><a href="miennam.html">Miền Nam</a></li>
-      <li><a href="mientrung.html">Miền Trung</a></li>
-    </ul>
-  </div>
-</div>
-<div class="slider-container">
-  <div class="slide fade">
-    <img class="slide-image" src="../static/img/silde7.jpg" />
-    <div class="slide-content">
-      <h3 class="slide-title">Quần thể du lịch sinh thái Tràng An</h3>
+  <body>
+    <div
+      id="header1"
+      class="d-flex text-white justify-content-between font-size-14 px-5 sticky top-0"
+    >
+      <ul>
+        <li>Email: oanhvu1503@gmail.com</li>
+        <li>Sdt:09887237361</li>
+      </ul>
+      <ul class="flex-row">
+        <li><a href="dangky.html">Đăng ký</a></li>
+        <li><a href="dangnhap.html">Đăng nhập</a></li>
+      </ul>
     </div>
-    <div class="slide-number-container">
-      <p class="slider-number">01</p>
-      <hr />
-      <p class="slider-number">05</p>
+
+    <div
+      id="header2"
+      class="d-flex text-white justify-content-between sticky top-0 py-2"
+    >
+      <div class="d-flex align-items-center">
+        <img
+          id="logo"
+          class="border-0 mx-5"
+          src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/design/discover/mascot-logo-design/mascot-logo-design_fb-img_1200x800.jpg"
+          alt=""
+        />
+        <span class="font-size-18">ĐÔNG Á TOURIST</span>
+      </div>
+
+      <div class="d-flex flex-column">
+        <ul class="d-flex justify-content-end margin-right-15 padding-5">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="mienbac.html">Miền Bắc</a></li>
+          <li><a href="miennam.html">Miền Nam</a></li>
+          <li><a href="mientrung.html">Miền Trung</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-
-  <div class="slide fade">
-    <img class="slide-image" src="../static/img/silde5.png" />
-    <div class="slide-content">
-      <h3 class="slide-title">
-        Lên Hà Giang ngắm hoa Tam Giác Mạch mùa thu
-      </h3>
-    </div>
-    <div class="slide-number-container">
-      <p class="slider-number">02</p>
-      <hr />
-      <p class="slider-number">05</p>
-    </div>
-  </div>
-
-  <div class="slide fade">
-    <img class="slide-image" src="../static/img/silde9.jpg" />
-    <div class="slide-content">
-      <h3 class="slide-title">Phố Cổ Hoa Lưu Về Đêm</h3>
-    </div>
-    <div class="slide-number-container">
-      <p class="slider-number">03</p>
-      <hr />
-      <p class="slider-number">05</p>
-    </div>
-  </div>
-
-  <div class="slide fade">
-    <img class="slide-image" src="../static/img/silde12.jpg" />
-    <div class="slide-content">
-      <h3 class="slide-title">Thành phố trong sương Đà Lạt</h3>
-    </div>
-    <div class="slide-number-container">
-      <p class="slider-number">04</p>
-      <hr />
-      <p class="slider-number">05</p>
-    </div>
-  </div>
-
-  <div class="slide fade">
-    <img class="slide-image" src="../static/img/silde13.jpg" />
-    <div class="slide-content">
-      <h3 class="slide-title">
-        Hồ Hoàn Kiếm được ví như trái tim của thủ đô
-      </h3>
-
-      <a href="" class="slide-btn">
-        button <ion-icon name="arrow-forward-circle"></ion-icon>
-      </a>
-    </div>
-    <div class="slide-number-container">
-      <p class="slider-number">05</p>
-      <hr />
-      <p class="slider-number">05</p>
-    </div>
-  </div>
-  <!-- Next and previous buttons -->
-  <div class="slider-nav">
-    <a class="slider-nav-btn" onclick="plusSlides(-1)">
-      <ion-icon name="caret-back-outline"></ion-icon>
-    </a>
-    <a class="slider-nav-btn" onclick="plusSlides(1)">
-      <ion-icon name="caret-forward-outline"></ion-icon>
-    </a>
-  </div>
-
-  <!-- The dots/circles -->
-  <div class="dot-container">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-  </div>
-</div>
-
-<div style="margin-top: 30rem"></div>
-
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-<style>
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto;
-    text-decoration: none;
-  }
-
-  .slider-container {
-    width: 100%;
-    top: 0;
-    z-index: -9;
-    position: absolute;
-  }
-
-  .slide {
-    width: 100%;
-    display: none;
-  }
-
-  .slide-image {
-    width: 100%;
-    height: 65vh;
-    object-fit: cover;
-    filter: brightness(0.6);
-  }
-
-  .slide-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    text-align: center;
-    padding: 1rem;
-  }
-
-  .slide-title {
-    width: 100%;
-    max-width: 50rem;
-    color: white;
-    font-size: 2rem;
-    font-weight: 500;
-    text-transform: capitalize;
-  }
-
-  .slide-desc {
-    width: 100%;
-    max-width: 50rem;
-    color: lightgray;
-    font-size: 1rem;
-    font-weight: 300;
-  }
-
-  .slide-btn {
-    color: black;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-top: 1rem;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    text-transform: capitalize;
-    transition: ease 0.3s;
-  }
-
-  .slide-btn:hover {
-    gap: 1rem;
-  }
-
-  .slide-number-container {
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    z-index: 5;
-    font-size: 1.5rem;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    color: rgba(211, 211, 211, 0.788);
-    letter-spacing: 0.2rem;
-  }
-
-  .slide-number-container hr {
-    width: 3rem;
-    transform: rotate(130deg);
-    border-color: rgba(211, 211, 211, 0.788);
-  }
-
-  .slider-nav {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    z-index: 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .slider-nav-btn {
-    cursor: pointer;
-    background-color: rgba(211, 211, 211, 0.226);
-    color: white;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: ease 0.1s;
-  }
-
-  .slider-nav-btn:hover {
-    background-color: white;
-    color: black;
-  }
-
-  .dot-container {
-    position: absolute;
-    bottom: 1rem;
-    left: 0;
-    z-index: 4;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-
-  .dot {
-    cursor: pointer;
-    height: 1rem;
-    width: 1rem;
-    background-color: rgba(211, 211, 211, 0.226);
-    border-radius: 50%;
-    display: inline-block;
-    transition: ease 0.1s;
-  }
-
-  .active,
-  .dot:hover {
-    background-color: white;
-  }
-
-  .fade {
-    animation-name: fade;
-    animation-duration:0.5s;
-  }
-
-  @keyframes fade {
-    from {
-      opacity: 0.8;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-</style>
-
-<script>let slideIndex = 1;
-  const slides = document.getElementsByClassName("slide");
-  const dots = document.getElementsByClassName("dot");
-
-  // Function to show a specific slide
-  function showSlides(n) {
-    if (n > slides.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
-
-    // Hide all slides
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-
-    // Remove the "active" class from all dots
-    for (let i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    // Display the current slide and mark its corresponding dot as active
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-  }
-
-  // Function to advance to the next slide
-  function plusSlides(n) {
-    showSlides((slideIndex += n));
-  }
-
-  // Function to navigate to a specific slide
-  function currentSlide(n) {
-    showSlides((slideIndex = n));
-  }
-
-  // Automatically advance to the next slide every 3 seconds (3000 milliseconds)
-  setInterval(function () {
-    plusSlides(1);
-  }, 5000);
-
-  // Initialize the slider
-  showSlides(slideIndex);
-</script>
-
-<section>
-
-    <div class="signin">
-
-        <div class="content">
-
-            <h2 class="text-red-400">Đăng ký</h2>
-
-            <form class="form" onsubmit="return validateForm()">
-
-                <div class="inputBox">
-
-                    <input type="phone" id="phone" required> <i>Số điện thoại</i>
-
-                </div>
-
-                <div class="inputBox">
-
-                    <input type="text" id="name" required> <i>Họ và tên</i>
-
-                </div>
-
-                <div class="inputBox">
-
-                    <input type="text" id="username" required> <i>Tên đăng nhập</i>
-
-                </div>
-
-                <div class="inputBox">
-
-                    <input type="password" id="password" required> <i>Mật khẩu</i>
-
-                </div>
-
-                <div class="links"> <a href="#"></a> <a href="index.html/dang_nhap">Đăng nhập?</a>
-
-                </div>
-
-                <div class="inputBox">
-
-                    <input type="submit" value="Đăng ký">
-
-                </div>
-
-            </form>
-
-            <script>
-                function validateForm() {
-                    var phone = document.getElementById("phone").value;
-                    var name = document.getElementById("name").value;
-                    var username = document.getElementById("username").value;
-                    var password = document.getElementById("password").value;
-
-                    if (phone == "" || name == "" || username == "" || password == "") {
-                        alert("Vui lòng điền đầy đủ thông tin!");
-                        return false;
-                    }
-
-                    if (phone.length != 9) {
-                        alert("Số điện thoại phải có 9 số!");
-                        return false;
-                    }
-
-                    if (password.length < 6) {
-                        alert("Mật khẩu phải có ít nhất 6 ký tự!");
-                        return false;
-                    }
-
-                    alert("Đăng ký thành công!");
-
-                    return true;
-                }
-            </script>
-
+    <div class="slider-container">
+      <div class="slide fade">
+        <img class="slide-image" src="../static/img/silde7.jpg" />
+        <div class="slide-content">
+          <h3 class="slide-title">Quần thể du lịch sinh thái Tràng An</h3>
         </div>
+        <div class="slide-number-container">
+          <p class="slider-number">01</p>
+          <hr />
+          <p class="slider-number">05</p>
+        </div>
+      </div>
 
+      <div class="slide fade">
+        <img class="slide-image" src="../static/img/silde5.png" />
+        <div class="slide-content">
+          <h3 class="slide-title">
+            Lên Hà Giang ngắm hoa Tam Giác Mạch mùa thu
+          </h3>
+        </div>
+        <div class="slide-number-container">
+          <p class="slider-number">02</p>
+          <hr />
+          <p class="slider-number">05</p>
+        </div>
+      </div>
+
+      <div class="slide fade">
+        <img class="slide-image" src="../static/img/silde9.jpg" />
+        <div class="slide-content">
+          <h3 class="slide-title">Phố Cổ Hoa Lưu Về Đêm</h3>
+        </div>
+        <div class="slide-number-container">
+          <p class="slider-number">03</p>
+          <hr />
+          <p class="slider-number">05</p>
+        </div>
+      </div>
+
+      <div class="slide fade">
+        <img class="slide-image" src="../static/img/silde12.jpg" />
+        <div class="slide-content">
+          <h3 class="slide-title">Thành phố trong sương Đà Lạt</h3>
+        </div>
+        <div class="slide-number-container">
+          <p class="slider-number">04</p>
+          <hr />
+          <p class="slider-number">05</p>
+        </div>
+      </div>
+
+      <div class="slide fade">
+        <img class="slide-image" src="../static/img/silde13.jpg" />
+        <div class="slide-content">
+          <h3 class="slide-title">
+            Hồ Hoàn Kiếm được ví như trái tim của thủ đô
+          </h3>
+
+          <a href="" class="slide-btn">
+            button <ion-icon name="arrow-forward-circle"></ion-icon>
+          </a>
+        </div>
+        <div class="slide-number-container">
+          <p class="slider-number">05</p>
+          <hr />
+          <p class="slider-number">05</p>
+        </div>
+      </div>
+      <!-- Next and previous buttons -->
+      <div class="slider-nav">
+        <a class="slider-nav-btn" onclick="plusSlides(-1)">
+          <ion-icon name="caret-back-outline"></ion-icon>
+        </a>
+        <a class="slider-nav-btn" onclick="plusSlides(1)">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+        </a>
+      </div>
+
+      <!-- The dots/circles -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
     </div>
 
-</section> <!-- partial -->
+    <div style="margin-top: 30rem"></div>
 
-<style>
-    section .signin {
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Roboto;
+        text-decoration: none;
+      }
+
+      .slider-container {
+        width: 100%;
+        top: 0;
+        z-index: -9;
+        position: absolute;
+      }
+
+      .slide {
+        width: 100%;
+        display: none;
+      }
+
+      .slide-image {
+        width: 100%;
+        height: 65vh;
+        object-fit: cover;
+        filter: brightness(0.6);
+      }
+
+      .slide-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .slide-title {
+        width: 100%;
+        max-width: 50rem;
+        color: white;
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: capitalize;
+      }
+
+      .slide-desc {
+        width: 100%;
+        max-width: 50rem;
+        color: lightgray;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+
+      .slide-btn {
+        color: black;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        text-transform: capitalize;
+        transition: ease 0.3s;
+      }
+
+      .slide-btn:hover {
+        gap: 1rem;
+      }
+
+      .slide-number-container {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        z-index: 5;
+        font-size: 1.5rem;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        color: rgba(211, 211, 211, 0.788);
+        letter-spacing: 0.2rem;
+      }
+
+      .slide-number-container hr {
+        width: 3rem;
+        transform: rotate(130deg);
+        border-color: rgba(211, 211, 211, 0.788);
+      }
+
+      .slider-nav {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .slider-nav-btn {
+        cursor: pointer;
+        background-color: rgba(211, 211, 211, 0.226);
+        color: white;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: ease 0.1s;
+      }
+
+      .slider-nav-btn:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .dot-container {
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        z-index: 4;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+
+      .dot {
+        cursor: pointer;
+        height: 1rem;
+        width: 1rem;
+        background-color: rgba(211, 211, 211, 0.226);
+        border-radius: 50%;
+        display: inline-block;
+        transition: ease 0.1s;
+      }
+
+      .active,
+      .dot:hover {
+        background-color: white;
+      }
+
+      .fade {
+        animation-name: fade;
+        animation-duration: 0.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.8;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+
+    <script>
+      let slideIndex = 1;
+      const slides = document.getElementsByClassName("slide");
+      const dots = document.getElementsByClassName("dot");
+
+      // Function to show a specific slide
+      function showSlides(n) {
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        // Remove the "active" class from all dots
+        for (let i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        // Display the current slide and mark its corresponding dot as active
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+
+      // Function to advance to the next slide
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Function to navigate to a specific slide
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      // Automatically advance to the next slide every 3 seconds (3000 milliseconds)
+      setInterval(function () {
+        plusSlides(1);
+      }, 5000);
+
+      // Initialize the slider
+      showSlides(slideIndex);
+      var buttons = Array.from(document.querySelectorAll("button")).filter(
+        (button) => {
+          return button.innerText == "Đặt tour";
+        }
+      );
+
+      buttons.forEach((button) => {
+        // set href = "#" attribute from a tag which is parent of button
+        button.parentElement.removeAttribute("href");
+      });
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          Swal.fire({
+            position: "center-center",
+            icon: "success",
+            title: "Đặt tour thành công",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        });
+      });
+    </script>
+
+    <section>
+      <div class="signin">
+        <div class="content">
+          <h2 class="text-red-400">Đăng ký</h2>
+
+          <form class="form" onsubmit="return validateForm()">
+            <div class="inputBox">
+              <input type="phone" id="phone" required /> <i>Số điện thoại</i>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" id="name" required /> <i>Họ và tên</i>
+            </div>
+
+            <div class="inputBox">
+              <input type="text" id="username" required /> <i>Tên đăng nhập</i>
+            </div>
+
+            <div class="inputBox">
+              <input type="password" id="password" required /> <i>Mật khẩu</i>
+            </div>
+
+            <div class="links">
+              <a href="#"></a> <a href="index.html/dang_nhap">Đăng nhập?</a>
+            </div>
+
+            <div class="inputBox">
+              <input type="submit" value="Đăng ký" />
+            </div>
+          </form>
+
+          <script>
+            function validateForm() {
+              var phone = document.getElementById("phone").value;
+              var name = document.getElementById("name").value;
+              var username = document.getElementById("username").value;
+              var password = document.getElementById("password").value;
+
+              if (
+                phone == "" ||
+                name == "" ||
+                username == "" ||
+                password == ""
+              ) {
+                Swal.fire({
+                  position: "center-center",
+                  icon: "error",
+                  title: "Vui lòng nhập đầy đủ thông tin",
+                  showConfirmButton: false,
+                  timer: 1500,
+                });
+                return false;
+              }
+
+              if (phone.length != 10) {
+                Swal.fire({
+                  position: "center-center",
+                  icon: "error",
+                  title: "Số điện thoại phải có 10 số",
+                  showConfirmButton: false,
+                  timer: 1500,
+                });
+                return false;
+              }
+
+              if (password.length < 6) {
+                Swal.fire({
+                  position: "center-center",
+                  icon: "error",
+                  title: "Mật khẩu phải có ít nhất 6 ký tự!",
+                  showConfirmButton: false,
+                  timer: 1500,
+                });
+                return false;
+              }
+
+              Swal.fire({
+                position: "center-center",
+                icon: "success",
+                title: "Đăng ký thành công",
+                showConfirmButton: false,
+                timer: 1500,
+              });
+
+              return true;
+            }
+          </script>
+        </div>
+      </div>
+    </section>
+    <!-- partial -->
+
+    <style>
+      section .signin {
         /* position: absolute; */
         margin: auto;
         width: 400px;
@@ -456,9 +505,9 @@
         padding: 40px;
         border-radius: 4px;
         /* box-shadow: 0 15px 35px rgba(0,0,0,9); */
-    }
+      }
 
-    section .signin .content {
+      section .signin .content {
         position: relative;
         width: 100%;
         display: flex;
@@ -466,27 +515,27 @@
         align-items: center;
         flex-direction: column;
         gap: 40px;
-    }
+      }
 
-    section .signin .content h2 {
+      section .signin .content h2 {
         font-size: 2em;
         /* color: #0f0; */
         text-transform: uppercase;
-    }
+      }
 
-    section .signin .content .form {
+      section .signin .content .form {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 25px;
-    }
+      }
 
-    section .signin .content .form .inputBox {
+      section .signin .content .form .inputBox {
         position: relative;
         width: 100%;
-    }
+      }
 
-    section .signin .content .form .inputBox input {
+      section .signin .content .form .inputBox input {
         position: relative;
         width: 100%;
         background: #e5e5e5;
@@ -497,13 +546,13 @@
         color: #fff;
         font-weight: 500;
         font-size: 1em;
-    }
+      }
 
-    section .signin .content .form .inputBox input[type="submit"] {
+      section .signin .content .form .inputBox input[type="submit"] {
         background: rgb(207, 94, 94);
-    }
+      }
 
-    section .signin .content .form .inputBox i {
+      section .signin .content .form .inputBox i {
         position: absolute;
         left: 0;
         padding: 15px 10px;
@@ -511,33 +560,33 @@
         color: #aaa;
         transition: 0.5s;
         pointer-events: none;
-    }
+      }
 
-    .signin .content .form .inputBox input:focus~i,
-    .signin .content .form .inputBox input:valid~i {
+      .signin .content .form .inputBox input:focus ~ i,
+      .signin .content .form .inputBox input:valid ~ i {
         transform: translateY(-7.5px);
         font-size: 0.8em;
         /* color: #fff; */
-    }
+      }
 
-    .signin .content .form .links {
+      .signin .content .form .links {
         position: relative;
         width: 100%;
         display: flex;
         justify-content: space-between;
-    }
+      }
 
-    .signin .content .form .links a {
+      .signin .content .form .links a {
         /* color: #fff; */
         text-decoration: none;
-    }
+      }
 
-    .signin .content .form .links a:nth-child(2) {
+      .signin .content .form .links a:nth-child(2) {
         /* color: #0f0; */
         font-weight: 600;
-    }
+      }
 
-    .signin .content .form .inputBox input[type="submit"] {
+      .signin .content .form .inputBox input[type="submit"] {
         padding: 10px;
         /* background: #0f0; */
         /* color: #000; */
@@ -545,117 +594,153 @@
         font-size: 1.35em;
         letter-spacing: 0.05em;
         cursor: pointer;
-    }
+      }
 
-    input[type="submit"]:active {
+      input[type="submit"]:active {
         opacity: 0.6;
-    }
+      }
 
-    @media (max-width: 900px) {
+      @media (max-width: 900px) {
         section span {
-            width: calc(10vw - 2px);
-            height: calc(10vw - 2px);
+          width: calc(10vw - 2px);
+          height: calc(10vw - 2px);
         }
-    }
+      }
 
-    @media (max-width: 600px) {
+      @media (max-width: 600px) {
         section span {
-            width: calc(20vw - 2px);
-            height: calc(20vw - 2px);
+          width: calc(20vw - 2px);
+          height: calc(20vw - 2px);
         }
-    }
-</style>
+      }
+    </style>
 
-<!-- phần footer -->
-<h1 class="footer text-center text-gray-500 text-2xl my-12">Vì sao chọn ĐÔNG Á TOURIST</h1>
-<div class="grid grid-flow-col grid-cols-3 text-center mb-12">
-    <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl">
-             Mạng bán tour
-        </div>
-        <img class="rounded-md" style="margin: 0 auto;width: 7rem; height: 7rem;"
-            src="../static/img/fooder1.jpg" alt="">
+    <!-- phần footer -->
+    <h1 class="footer text-center text-gray-500 text-2xl my-12">
+      Vì sao chọn ĐÔNG Á TOURIST
+    </h1>
+    <div class="grid grid-flow-col grid-cols-3 text-center mb-12">
+      <div class="mx-8 bg-white shadow rounded p-3">
+        <div class="text-gray-500 text-xl"> Mạng bán tour</div>
+        <img
+          class="rounded-md"
+          style="margin: 0 auto; width: 7rem; height: 7rem"
+          src="../static/img/fooder1.jpg"
+          alt=""
+        />
         <div class="text-gray-500 text-sm">
-            Đầu tiên tại Việt Nam, đặt tour du lịch trực tuyến.
+          Đầu tiên tại Việt Nam, đặt tour du lịch trực tuyến.
         </div>
+      </div>
+      <div class="mx-8 bg-white shadow rounded p-3">
+        <div class="text-gray-500 text-xl"> Sản Phẩm và dịch vụ</div>
+        <img
+          class="rounded-md"
+          style="margin: 0 auto; width: 7rem; height: 7rem"
+          src="../static/img/fooder2.jpg"
+          alt=""
+        />
+        <div class="text-gray-500 text-sm">Đa dạng - Chất Lượng - An Toàn</div>
+      </div>
+      <div class="mx-8 bg-white shadow rounded p-3">
+        <div class="text-gray-500 text-xl"> Giá cả</div>
+        <img
+          class="rounded-md"
+          style="margin: 0 auto; width: 7rem; height: 7rem"
+          src="../static/img/fooder3.jpg"
+          alt=""
+        />
+        <div class="text-gray-500 text-sm">Luôn có mức giá Tốt</div>
+      </div>
     </div>
-    <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl">
-             Sản Phẩm và dịch vụ
-        </div>
-        <img class="rounded-md" style="margin: 0 auto;width: 7rem; height: 7rem;"
-            src="../static/img/fooder2.jpg" alt="">
-        <div class="text-gray-500 text-sm">
-            Đa dạng - Chất Lượng - An Toàn
-        </div>
+    <div class="grid grid-flow-col grid-cols-3 text-center mb-12">
+      <div class="mx-8 bg-white shadow rounded p-3">
+        <div class="text-gray-500 text-xl"> Hỗ trợ khách hàng</div>
+        <img
+          class="rounded-md"
+          style="margin: 0 auto; width: 7rem; height: 7rem"
+          src="../static/img/fooder4.jpg"
+          alt=""
+        />
+        <div class="text-gray-500 text-sm">Hotline 24/7 - Trực tuyến</div>
+      </div>
+      <div class="mx-8 bg-white shadow rounded p-3">
+        <div class="text-gray-500 text-xl">Đặt tour du lịch</div>
+        <img
+          class="rounded-md"
+          style="margin: 0 auto; width: 7rem; height: 7rem"
+          src="../static/img/fooder5.jpg"
+          alt=""
+        />
+        <div class="text-gray-500 text-sm">Dễ dàng nhanh chóng và tiện lợi</div>
+      </div>
+      <div class="mx-8 bg-white shadow rounded p-3">
+        <div class="text-gray-500 text-xl">Thanh Toán</div>
+        <img
+          class="rounded-md"
+          style="margin: 0 auto; width: 7rem; height: 7rem"
+          src="../static/img/fooder6.jpg"
+          alt=""
+        />
+        <div class="text-gray-500 text-sm">An toàn - Tiện lợi - Đa dạng</div>
+      </div>
     </div>
-    <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl">
-             Giá cả
-        </div>
-        <img class="rounded-md" style="margin: 0 auto;width: 7rem; height: 7rem;"
-            src="../static/img/fooder3.jpg" alt="">
-        <div class="text-gray-500 text-sm">
-            Luôn có mức giá Tốt
-        </div>
-    </div>
-</div>
-<div class="grid grid-flow-col grid-cols-3 text-center mb-12">
-    <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl">
-             Hỗ trợ khách hàng
-        </div>
-        <img class="rounded-md" style="margin: 0 auto;width: 7rem; height: 7rem;"
-            src="../static/img/fooder4.jpg" alt="">
-        <div class="text-gray-500 text-sm">
-            Hotline 24/7 - Trực tuyến
-        </div>
-    </div>
-    <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl">
-            Đặt tour du lịch
-        </div>
-        <img class="rounded-md" style="margin: 0 auto;width: 7rem; height: 7rem;"
-            src="../static/img/fooder5.jpg" alt="">
-        <div class="text-gray-500 text-sm">
-            Dễ dàng nhanh chóng và tiện lợi
-        </div>
-    </div>
-    <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl">
-            Thanh Toán
-        </div>
-        <img class="rounded-md" style="margin: 0 auto;width: 7rem; height: 7rem;"
-            src="../static/img/fooder6.jpg" alt="">
-        <div class="text-gray-500 text-sm">
-            An toàn - Tiện lợi - Đa dạng
-        </div>
-    </div>
-</div>
 
-<div class="d-flex justify-content-around bg-dark text-white ">
-    <div class="d-flex flex-column padding-15">
+    <div class="d-flex justify-content-around bg-dark text-white">
+      <div class="d-flex flex-column padding-15">
         <div class="font-bold">Về chúng tôi</div>
         <div class="padding-top-5"><a href="gioithieu.html">Giới thiệu</a></div>
         <div class="padding-top-5">Điều khoản sử dụng</div>
         <div class="padding-top-5">Chính sách bảo mật</div>
         <div class="padding-top-5">Quy chế hoạt động</div>
-    </div>
-    <div class="d-flex flex-column padding-15">
+      </div>
+      <div class="d-flex flex-column padding-15">
         <div class="font-bold">Hỗ trợ khách hàng</div>
         <div class="padding-top-5">Hướng dẫn đặt tour</div>
         <div class="padding-top-5">Hướng dẫn thanh toán</div>
         <div class="padding-top-5">Hướng dẫn đăng ký</div>
         <div class="padding-top-5">Hướng dẫn đăng nhập</div>
-    </div>
-    <div class="d-flex flex-column padding-15">
+      </div>
+      <div class="d-flex flex-column padding-15">
         <div class="font-bold">Liên hệ</div>
         <div class="padding-top-5">Địa chỉ: 123 Lê Duẩn, Hà Nội</div>
         <div class="padding-top-5">Email: oanhvu1503@gmail.com</div>
         <div class="padding-top-5">Sđt: 09887237361</div>
+      </div>
     </div>
-</div>
 
-</body>
+    <script>
+      var header1 = document.getElementById("header1");
+      var header2 = document.getElementById("header2");
+      var buttons = Array.from(document.querySelectorAll("button")).filter(
+        (button) => {
+          return button.innerText == "Đặt tour";
+        }
+      );
 
+      buttons.forEach((button) => {
+        // set href = "#" attribute from a tag which is parent of button
+        button.parentElement.removeAttribute("href");
+      });
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          Swal.fire({
+            position: "center-center",
+            icon: "success",
+            title: "Đặt tour thành công",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        });
+      });
+
+      window.addEventListener("scroll", function () {
+        header1.classList.toggle("bg-white", window.scrollY > 0);
+        header1.classList.toggle("text-white", window.scrollY == 0);
+        header2.classList.toggle("text-white", window.scrollY == 0);
+        header2.classList.toggle("bg-white", window.scrollY > 0);
+      });
+    </script>
+  </body>
 </html>

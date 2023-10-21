@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web du lich</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,38 +23,39 @@
 
 <body>
   <div
-  class="d-flex bg-transparent text-white justify-content-between font-size-14 px-5"
->
-  <ul>
-    <li>Email: oanhvu1503@gmail.com</li>
-    <li>Sdt:09887237361</li>
-  </ul>
-  <ul class="flex-row">
-    <li><a href="dangky.html">Đăng ký</a></li>
-    <li><a href="dangnhap.html">Đăng nhập</a></li>
-  </ul>
-</div>
+      id="header1"
+      class="d-flex text-white justify-content-between font-size-14 px-5 sticky top-0"
+    >
+      <ul>
+        <li>Email: oanhvu1503@gmail.com</li>
+        <li>Sdt:09887237361</li>
+      </ul>
+      <ul class="flex-row">
+        <li><a href="dangky.html">Đăng ký</a></li>
+        <li><a href="dangnhap.html">Đăng nhập</a></li>
+      </ul>
+    </div>
 
-<div class="d-flex text-white justify-content-between">
-  <div class="d-flex align-items-center">
-    <img
-      id="logo"
-      class="border mx-5"
-      src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/design/discover/mascot-logo-design/mascot-logo-design_fb-img_1200x800.jpg"
-      alt=""
-    />
-    <!-- <span class="font-size-18">ĐÔNG Á TOURIST</span> -->
-  </div>
+    <div id="header2" class="d-flex text-white justify-content-between sticky top-0 py-2">
+      <div class="d-flex align-items-center">
+        <img
+          id="logo"
+          class="border-0 mx-5"
+          src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/design/discover/mascot-logo-design/mascot-logo-design_fb-img_1200x800.jpg"
+          alt=""
+        />
+        <span class="font-size-18">ĐÔNG Á TOURIST</span>
+      </div>
 
-  <div class="d-flex flex-column">
-    <ul class="d-flex justify-content-end margin-right-15 padding-5">
-      <li><a href="../index.html">Trang chủ</a></li>
-      <li><a href="../mienbac.html">Miền Bắc</a></li>
-      <li><a href="../miennam.html">Miền Nam</a></li>
-      <li><a href="../mientrung.html">Miền Trung</a></li>
-    </ul>
-  </div>
-</div>
+      <div class="d-flex flex-column">
+        <ul class="d-flex justify-content-end margin-right-15 padding-5">
+          <li><a href="../index.html">Trang chủ</a></li>
+          <li><a href="../mienbac.html">Miền Bắc</a></li>
+          <li><a href="../miennam.html">Miền Nam</a></li>
+          <li><a href="../mientrung.html">Miền Trung</a></li>
+        </ul>
+      </div>
+    </div>
 <div class="slider-container">
   <div class="slide fade">
     <img class="slide-image" src="../../static/img/silde7.jpg" />
@@ -362,6 +368,27 @@
 
   // Initialize the slider
   showSlides(slideIndex);
+  var buttons = Array.from(document.querySelectorAll("div")).filter((button) => {
+    return button.innerText == "Đặt ngay";
+  });
+
+  buttons.forEach((button) => {
+    // set href = "#" attribute from a tag which is parent of button
+    button.parentElement.removeAttribute("href");
+    
+  });
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      Swal.fire({
+        position: 'center-center',
+        icon: 'success',
+        title: 'Đặt tour thành công',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    });
+  });
 </script>
 
 <div class="d-flex flex-row mx-32">
@@ -403,13 +430,13 @@
 
 <div class="d-flex" style="margin: 0rem 8rem;">
     <span class="width-40 pl-0 ml-3 mx-3 rounded text-left text-2xl text-gray-600">Thông tin dịch vụ</span>
-    <span class="width-40 pl-0 ml-3 mx-3 rounded text-left text-2xl text-gray-600">Thông tin dịch vụ</span>
+    <span class="width-40 pl-0 ml-3 mx-3 rounded text-left text-2xl text-gray-600">lịch trình du lịch</span>
 </div>
 <div class="d-flex" style="margin: 0rem 8rem;">
     <div class="width-40 p-4 pl-0 m-3 rounded">
         <ul class="grid gap-4">
-            <li class="cursor-pointer border-l-2 width-100">Khởi hành 19/10/2023 - Giờ đi: 09:40</li>
-            <li class="cursor-pointer border-l-2 width-100">Tập trung 00:00 ngày 19/10/2023</li>
+            <li class="cursor-pointer border-l-2 width-100">Khởi hành 10/12/2023 - Giờ đi: 09:40</li>
+            <li class="cursor-pointer border-l-2 width-100">Tập trung 00:00 ngày 10/12/2023</li>
             <li class="cursor-pointer border-l-2 width-100">Thời gian 4 ngày</li>
             <li class="cursor-pointer border-l-2 width-100">Nơi khởi hành Đà Nẵng</li>
             <li class="cursor-pointer border-l-2 width-100">Số chỗ còn nhận 6</li>
@@ -426,8 +453,17 @@
                         1</div>
                 </div>
                 <div class="grid grid-rows-2 p-4">
-                    <span class="text-gray-500">19/10/2023</span>
-                    <span class="text-gray-700">Đà Nẵng - Nội Bài (Hà Nội) – Hà Nội (Ăn trưa, tối)</span>
+                    <span class="text-gray-500">10/12/2023</span>
+                    <span class="text-gray-700">TP HỒ CHÍ MINH - ĐÀ NẴNG - HUẾ (Ăn trưa, chiều)</span>
+                    <span class="text-gray-500">Quý khách tập trung tại Ga đi Trong Nước, sân bay Tân Sơn Nhất, hướng dẫn viên Vietravel làm thủ tục cho Quý khách đáp chuyến bay đi Đà Nẵng. Xe đón quý khách tại sân bay Đà Nẵng, bắt đầu hành trình tham quan: <br>
+                      - Đầm Lập An: ngắm cảnh mây bồng bềnh trên những chóp núi bao bọc quanh đầm,..<br>
+                      - Đại Nội: hoàng cung xưa của 13 vị vua triều Nguyễn, tham quan Ngọ Môn, Điện Thái Hòa, Tử Cấm Thành, Thế Miếu, Hiển Lâm Các, Cửu Đình, Bảo tàng Cổ Vật Cung Đình Huế…<br>
+                      - Chùa Thiên Mụ: ngôi chùa được xem là biểu tượng xứ Huế và là nơi lưu giữ nhiều cổ vật quý giá không chỉ về mặt lịch sử mà còn cả về nghệ thuật.<br>
+                      - Mua sắm đặc sản mè xửng Thiên Hỷ<br>
+                      - Dạo Phố Đêm: Trải nghiệm một Huế về đêm đầy sắc màu tại Phố đi bộ ven sông Hương, hài hòa với vẻ lung linh cầu Trường Tiền. Tự do thưởng thức các món đường phố xứ Huế như bánh mì lọc, chè Huế, ngắm nhìn thuyền rồng ngược xuôi bên bến Tòa Khâm văng vẳng âm vang điệu hò Huế. Khám phá khu phố Tây sôi động về đêm với nhiều quán xá đông vui, những hàng quà lưu niệm.<br>
+
+                      Đoàn quay về khách sạn, nhận phòng tự do nghỉ ngơi.<br>
+                    </span>
                 </div>
             </li>
             <li class="bg-white d-flex flex-column-3">
@@ -439,8 +475,17 @@
                         2</div>
                 </div>
                 <div class="grid grid-rows-2 p-4">
-                    <span class="text-gray-500">19/10/2023</span>
-                    <span class="text-gray-700">Đà Nẵng - Nội Bài (Hà Nội) – Hà Nội (Ăn trưa, tối)</span>
+                    <span class="text-gray-500">11/12/2023</span>
+                    <span class="text-gray-700">HUẾ - LA VANG - ĐỘNG THIÊN ĐƯỜNG (Ăn sáng, trưa, chiều)</span>
+                    <span class="text-gray-500">
+                      Dùng bữa sáng khách sạn. Quý khách khởi hành sớm đi Quảng Bình, trên đường đi dừng tham quan:<br>
+                      -  Thánh Địa La Vang: một trong bốn tiểu vương cung thánh đường La Vang tại Việt Nam <br>
+                      -  Động Thiên Đường: một trong những hang động kỳ vĩ nhất thế giới, được xem như hoàng cung dưới lòng đất, một nhánh thuộc Quần thể di sản thiên nhiên thế giới Vườn Quốc Gia Phong Nha Kẻ Bàng. <br>
+
+                      Sau khi tham quan, đoàn khởi hành về đến Huế khoảng 21:00, nhận phòng tự do nghỉ ngơi.<br>
+
+                      Nghỉ đêm tại Huế. <br>
+                    </span>
                 </div>
             </li>
             <li class="bg-white d-flex flex-column-3">
@@ -452,8 +497,26 @@
                         3</div>
                 </div>
                 <div class="grid grid-rows-2 p-4">
-                    <span class="text-gray-500">19/10/2023</span>
-                    <span class="text-gray-700">Đà Nẵng - Nội Bài (Hà Nội) – Hà Nội (Ăn trưa, tối)</span>
+                    <span class="text-gray-500">12/12/2023</span>
+                    <span class="text-gray-700">HUẾ - ĐÀ NẴNG - KHU DU LỊCH BÀ NÀ - PHỐ CỔ HỘI AN (Ăn sáng, chiều)</span>
+                    <span class="text-gray-500">
+                      
+Dùng bữa sáng tại khách sạn. Xe đưa Quý khách khởi hành trở về Đà Nẵng:<br>
+
+- Khu du lịch Bà Nà (chi phí cáp treo & ăn trưa tự túc): tận hưởng không khí se lạnh của Đà Lạt tại miền Trung, đoàn tự do tham quan Chùa Linh Ứng, Hầm Rượu Debay, vườn hoa Le Jardin D’Amour, Khu Tâm linh mới của Bà Nà viếng Đền Lĩnh Chúa Linh Từ, khu vui chơi Fantasy Park, tự do chụp hình tại Cầu Vàng điểm tham quan siêu hot tại Bà Nà…Ăn trưa tại Bà Nà tự túc. Sau đó đoàn tiếp tục tham quan vui chơi đến giờ xuống cáp. <br>
+
+Buổi chiều quý khách tham quan: <br>
+
+- Bán đảo Sơn Trà và Chùa Linh Ứng 3: nơi đây có tượng Phật Quan Thế Âm cao nhất Việt Nam.<br>
+
+- Làng Đá Non Nước Quốc Hiệp: mua sắm sản phẩm đá mỹ nghệ tạo phong thủy cho tổ ấm hoặc làm quà tặng ý nghĩa cho người thân và bạn bè.<br>
+
+- Phố Cổ Hội An: Chùa Cầu, Nhà Cổ Phùng Hưng, Hội Quán Phước Kiến, Cơ sở Thủ Công Mỹ Nghệ,… Tự do thả đèn hoa đăng cầu sức khỏe bình an & phúc lộc năm mới trên dòng sông Hoài…. (chi phí tự túc). <br>
+
+Đoàn quay về Đà Nẵng, nhận phòng khách sạn, tự do nghỉ ngơi. <br>
+
+Nghỉ đêm tại Đà Nẵng.  <br>
+                    </span>
                 </div>
             </li>
             <li class="bg-white d-flex flex-column-3">
@@ -465,8 +528,18 @@
                         4</div>
                 </div>
                 <div class="grid grid-rows-2 p-4">
-                    <span class="text-gray-500">19/10/2023</span>
-                    <span class="text-gray-700">Đà Nẵng - Nội Bài (Hà Nội) – Hà Nội (Ăn trưa, tối)</span>
+                    <span class="text-gray-500">13/12/2023</span>
+                    <span class="text-gray-700"> ĐÀ NẴNG - TP.HỒ CHÍ MINH (Ăn sáng)</span>
+                    <span class="text-gray-500" >
+                     
+Dùng bữa sáng tại khách sạn. Quý khách tự do dạo phố cảm nhận không khí trong lành và khung cảnh yên bình vào sáng sớm. Đoàn mua sắm tại:<br>
+
+- Mua sắm đặc sản phố biển tại Thiên Phú và Giao Mart: với hơn 2000 sản phẩm đặc sản Đà Nẵng, Miền Trung và các vùng miền lân cận, nổi bật nhất là chả bò, bò khô, mực rim me, mực khô, ghẹ sữa sốt và đầy đủ các loại khô cá,...<br>
+
+Xe tiễn Quý khách ra sân bay Đà Nẵng đón chuyến bay trở về Tp.Hồ Chí Minh. Chia tay Quý khách và kết thúc chương trình du lịch tại sân bay Tân Sơn Nhất.  <br>
+
+ 
+                    </span>
                 </div>
             </li>
         </ul>
@@ -673,7 +746,39 @@
     </div>
 </div>
 
-</body>
+<script>
+      var header1 = document.getElementById("header1");
+      var header2 = document.getElementById("header2");
+ var buttons = Array.from(document.querySelectorAll("div")).filter((button) => {
+    return button.innerText == "Đặt ngay";
+  });
+
+  buttons.forEach((button) => {
+    // set href = "#" attribute from a tag which is parent of button
+    button.parentElement.removeAttribute("href");
+    
+  });
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      Swal.fire({
+        position: 'center-center',
+        icon: 'success',
+        title: 'Đặt tour thành công',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    });
+  });
+      
+      window.addEventListener("scroll", function () {
+        header1.classList.toggle("bg-white", window.scrollY > 0);
+        header1.classList.toggle("text-white", window.scrollY == 0);
+        header2.classList.toggle("text-white", window.scrollY == 0);
+        header2.classList.toggle("bg-white", window.scrollY > 0);
+      });
+    </script>
+  </body>
 
 </html>
 

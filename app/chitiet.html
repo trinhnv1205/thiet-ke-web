@@ -1,698 +1,956 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web du lich</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.js"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="../static/css/main.css">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-</head>
-
-<body>
-  <div
-  class="d-flex bg-transparent text-white justify-content-between font-size-14 px-5"
->
-  <ul>
-    <li>Email: oanhvu1503@gmail.com</li>
-    <li>Sdt:09887237361</li>
-  </ul>
-  <ul class="flex-row">
-    <li><a href="dangky.html">Đăng ký</a></li>
-    <li><a href="dangnhap.html">Đăng nhập</a></li>
-  </ul>
-</div>
-
-<div class="d-flex text-white justify-content-between">
-  <div class="d-flex align-items-center">
-    <img
-      id="logo"
-      class="border mx-5"
-      src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/design/discover/mascot-logo-design/mascot-logo-design_fb-img_1200x800.jpg"
-      alt=""
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.css"
     />
-    <!-- <span class="font-size-18">ĐÔNG Á TOURIST</span> -->
-  </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.css"
+    />
+    <link rel="stylesheet" href="../static/css/main.css" />
 
-  <div class="d-flex flex-column">
-    <ul class="d-flex justify-content-end margin-right-15 padding-5">
-      <li><a href="index.html">Trang chủ</a></li>
-      <li><a href="mienbac.html">Miền Bắc</a></li>
-      <li><a href="miennam.html">Miền Nam</a></li>
-      <li><a href="mientrung.html">Miền Trung</a></li>
-    </ul>
-  </div>
-</div>
-<div class="slider-container">
-  <div class="slide fade">
-    <img class="slide-image" src="../static/img/silde7.jpg" />
-    <div class="slide-content">
-      <h3 class="slide-title">Quần thể du lịch sinh thái Tràng An</h3>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div
+      id="header1"
+      class="d-flex text-white justify-content-between font-size-14 px-5 sticky top-0"
+    >
+      <ul>
+        <li>Email: oanhvu1503@gmail.com</li>
+        <li>Sdt:09887237361</li>
+      </ul>
+      <ul class="flex-row">
+        <li><a href="dangky.html">Đăng ký</a></li>
+        <li><a href="dangnhap.html">Đăng nhập</a></li>
+      </ul>
     </div>
-    <div class="slide-number-container">
-      <p class="slider-number">01</p>
-      <hr />
-      <p class="slider-number">05</p>
+
+    <div id="header2" class="d-flex text-white justify-content-between sticky top-0 py-2">
+      <div class="d-flex align-items-center">
+        <img
+          id="logo"
+          class="border-0 mx-5"
+          src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/design/discover/mascot-logo-design/mascot-logo-design_fb-img_1200x800.jpg"
+          alt=""
+        />
+        <span class="font-size-18">ĐÔNG Á TOURIST</span>
+      </div>
+
+      <div class="d-flex flex-column">
+        <ul class="d-flex justify-content-end margin-right-15 padding-5">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="mienbac.html">Miền Bắc</a></li>
+          <li><a href="miennam.html">Miền Nam</a></li>
+          <li><a href="mientrung.html">Miền Trung</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
+    <div class="slider-container">
+      <div class="slide fade">
+        <img class="slide-image" src="../static/img/silde7.jpg" />
+        <div class="slide-content">
+          <h3 class="slide-title">Quần thể du lịch sinh thái Tràng An</h3>
+        </div>
+        <div class="slide-number-container">
+          <p class="slider-number">01</p>
+          <hr />
+          <p class="slider-number">05</p>
+        </div>
+      </div>
 
-  <div class="slide fade">
-    <img class="slide-image" src="../static/img/silde5.png" />
-    <div class="slide-content">
-      <h3 class="slide-title">
-        Lên Hà Giang ngắm hoa Tam Giác Mạch mùa thu
-      </h3>
+      <div class="slide fade">
+        <img class="slide-image" src="../static/img/silde5.png" />
+        <div class="slide-content">
+          <h3 class="slide-title">
+            Lên Hà Giang ngắm hoa Tam Giác Mạch mùa thu
+          </h3>
+        </div>
+        <div class="slide-number-container">
+          <p class="slider-number">02</p>
+          <hr />
+          <p class="slider-number">05</p>
+        </div>
+      </div>
+
+      <div class="slide fade">
+        <img class="slide-image" src="../static/img/silde9.jpg" />
+        <div class="slide-content">
+          <h3 class="slide-title">Phố Cổ Hoa Lưu Về Đêm</h3>
+        </div>
+        <div class="slide-number-container">
+          <p class="slider-number">03</p>
+          <hr />
+          <p class="slider-number">05</p>
+        </div>
+      </div>
+
+      <div class="slide fade">
+        <img class="slide-image" src="../static/img/silde12.jpg" />
+        <div class="slide-content">
+          <h3 class="slide-title">Thành phố trong sương Đà Lạt</h3>
+        </div>
+        <div class="slide-number-container">
+          <p class="slider-number">04</p>
+          <hr />
+          <p class="slider-number">05</p>
+        </div>
+      </div>
+
+      <div class="slide fade">
+        <img class="slide-image" src="../static/img/silde13.jpg" />
+        <div class="slide-content">
+          <h3 class="slide-title">
+            Hồ Hoàn Kiếm được ví như trái tim của thủ đô
+          </h3>
+
+          <a href="" class="slide-btn">
+            button <ion-icon name="arrow-forward-circle"></ion-icon>
+          </a>
+        </div>
+        <div class="slide-number-container">
+          <p class="slider-number">05</p>
+          <hr />
+          <p class="slider-number">05</p>
+        </div>
+      </div>
+      <!-- Next and previous buttons -->
+      <div class="slider-nav">
+        <a class="slider-nav-btn" onclick="plusSlides(-1)">
+          <ion-icon name="caret-back-outline"></ion-icon>
+        </a>
+        <a class="slider-nav-btn" onclick="plusSlides(1)">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+        </a>
+      </div>
+
+      <!-- The dots/circles -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
     </div>
-    <div class="slide-number-container">
-      <p class="slider-number">02</p>
-      <hr />
-      <p class="slider-number">05</p>
-    </div>
-  </div>
 
-  <div class="slide fade">
-    <img class="slide-image" src="../static/img/silde9.jpg" />
-    <div class="slide-content">
-      <h3 class="slide-title">Phố Cổ Hoa Lưu Về Đêm</h3>
-    </div>
-    <div class="slide-number-container">
-      <p class="slider-number">03</p>
-      <hr />
-      <p class="slider-number">05</p>
-    </div>
-  </div>
+    <div style="margin-top: 30rem"></div>
 
-  <div class="slide fade">
-    <img class="slide-image" src="../static/img/silde12.jpg" />
-    <div class="slide-content">
-      <h3 class="slide-title">Thành phố trong sương Đà Lạt</h3>
-    </div>
-    <div class="slide-number-container">
-      <p class="slider-number">04</p>
-      <hr />
-      <p class="slider-number">05</p>
-    </div>
-  </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
-  <div class="slide fade">
-    <img class="slide-image" src="../static/img/silde13.jpg" />
-    <div class="slide-content">
-      <h3 class="slide-title">
-        Hồ Hoàn Kiếm được ví như trái tim của thủ đô
-      </h3>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
-      <a href="" class="slide-btn">
-        button <ion-icon name="arrow-forward-circle"></ion-icon>
-      </a>
-    </div>
-    <div class="slide-number-container">
-      <p class="slider-number">05</p>
-      <hr />
-      <p class="slider-number">05</p>
-    </div>
-  </div>
-  <!-- Next and previous buttons -->
-  <div class="slider-nav">
-    <a class="slider-nav-btn" onclick="plusSlides(-1)">
-      <ion-icon name="caret-back-outline"></ion-icon>
-    </a>
-    <a class="slider-nav-btn" onclick="plusSlides(1)">
-      <ion-icon name="caret-forward-outline"></ion-icon>
-    </a>
-  </div>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Roboto;
+        text-decoration: none;
+      }
 
-  <!-- The dots/circles -->
-  <div class="dot-container">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-  </div>
-</div>
+      .slider-container {
+        width: 100%;
+        top: 0;
+        z-index: -9;
+        position: absolute;
+      }
 
-<div style="margin-top: 30rem"></div>
+      .slide {
+        width: 100%;
+        display: none;
+      }
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      .slide-image {
+        width: 100%;
+        height: 65vh;
+        object-fit: cover;
+        filter: brightness(0.6);
+      }
 
-<style>
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+      .slide-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+        padding: 1rem;
+      }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto;
-    text-decoration: none;
-  }
+      .slide-title {
+        width: 100%;
+        max-width: 50rem;
+        color: white;
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: capitalize;
+      }
 
-  .slider-container {
-    width: 100%;
-    top: 0;
-    z-index: -9;
-    position: absolute;
-  }
+      .slide-desc {
+        width: 100%;
+        max-width: 50rem;
+        color: lightgray;
+        font-size: 1rem;
+        font-weight: 300;
+      }
 
-  .slide {
-    width: 100%;
-    display: none;
-  }
+      .slide-btn {
+        color: black;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        text-transform: capitalize;
+        transition: ease 0.3s;
+      }
 
-  .slide-image {
-    width: 100%;
-    height: 65vh;
-    object-fit: cover;
-    filter: brightness(0.6);
-  }
+      .slide-btn:hover {
+        gap: 1rem;
+      }
 
-  .slide-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    text-align: center;
-    padding: 1rem;
-  }
+      .slide-number-container {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        z-index: 5;
+        font-size: 1.5rem;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        color: rgba(211, 211, 211, 0.788);
+        letter-spacing: 0.2rem;
+      }
 
-  .slide-title {
-    width: 100%;
-    max-width: 50rem;
-    color: white;
-    font-size: 2rem;
-    font-weight: 500;
-    text-transform: capitalize;
-  }
+      .slide-number-container hr {
+        width: 3rem;
+        transform: rotate(130deg);
+        border-color: rgba(211, 211, 211, 0.788);
+      }
 
-  .slide-desc {
-    width: 100%;
-    max-width: 50rem;
-    color: lightgray;
-    font-size: 1rem;
-    font-weight: 300;
-  }
+      .slider-nav {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
 
-  .slide-btn {
-    color: black;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-top: 1rem;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    text-transform: capitalize;
-    transition: ease 0.3s;
-  }
+      .slider-nav-btn {
+        cursor: pointer;
+        background-color: rgba(211, 211, 211, 0.226);
+        color: white;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: ease 0.1s;
+      }
 
-  .slide-btn:hover {
-    gap: 1rem;
-  }
+      .slider-nav-btn:hover {
+        background-color: white;
+        color: black;
+      }
 
-  .slide-number-container {
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    z-index: 5;
-    font-size: 1.5rem;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    color: rgba(211, 211, 211, 0.788);
-    letter-spacing: 0.2rem;
-  }
+      .dot-container {
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        z-index: 4;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
 
-  .slide-number-container hr {
-    width: 3rem;
-    transform: rotate(130deg);
-    border-color: rgba(211, 211, 211, 0.788);
-  }
+      .dot {
+        cursor: pointer;
+        height: 1rem;
+        width: 1rem;
+        background-color: rgba(211, 211, 211, 0.226);
+        border-radius: 50%;
+        display: inline-block;
+        transition: ease 0.1s;
+      }
 
-  .slider-nav {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    z-index: 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
+      .active,
+      .dot:hover {
+        background-color: white;
+      }
 
-  .slider-nav-btn {
-    cursor: pointer;
-    background-color: rgba(211, 211, 211, 0.226);
-    color: white;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: ease 0.1s;
-  }
+      .fade {
+        animation-name: fade;
+        animation-duration: 0.5s;
+      }
 
-  .slider-nav-btn:hover {
-    background-color: white;
-    color: black;
-  }
+      @keyframes fade {
+        from {
+          opacity: 0.8;
+        }
 
-  .dot-container {
-    position: absolute;
-    bottom: 1rem;
-    left: 0;
-    z-index: 4;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-  }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
 
-  .dot {
-    cursor: pointer;
-    height: 1rem;
-    width: 1rem;
-    background-color: rgba(211, 211, 211, 0.226);
-    border-radius: 50%;
-    display: inline-block;
-    transition: ease 0.1s;
-  }
+    <script>
+      let slideIndex = 1;
+      const slides = document.getElementsByClassName("slide");
+      const dots = document.getElementsByClassName("dot");
 
-  .active,
-  .dot:hover {
-    background-color: white;
-  }
+      // Function to show a specific slide
+      function showSlides(n) {
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
 
-  .fade {
-    animation-name: fade;
-    animation-duration:0.5s;
-  }
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
 
-  @keyframes fade {
-    from {
-      opacity: 0.8;
-    }
+        // Remove the "active" class from all dots
+        for (let i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
 
-    to {
-      opacity: 1;
-    }
-  }
-</style>
+        // Display the current slide and mark its corresponding dot as active
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
 
-<script>let slideIndex = 1;
-  const slides = document.getElementsByClassName("slide");
-  const dots = document.getElementsByClassName("dot");
+      // Function to advance to the next slide
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
 
-  // Function to show a specific slide
-  function showSlides(n) {
-    if (n > slides.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
+      // Function to navigate to a specific slide
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
 
-    // Hide all slides
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
+      // Automatically advance to the next slide every 3 seconds (3000 milliseconds)
+      setInterval(function () {
+        plusSlides(1);
+      }, 5000);
 
-    // Remove the "active" class from all dots
-    for (let i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
+      // Initialize the slider
+      showSlides(slideIndex);
+  var buttons = Array.from(document.querySelectorAll("button")).filter((button) => {
+    return button.innerText == "Đặt tour";
+  });
 
-    // Display the current slide and mark its corresponding dot as active
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-  }
+  buttons.forEach((button) => {
+    // set href = "#" attribute from a tag which is parent of button
+    button.parentElement.removeAttribute("href");
+    
+  });
 
-  // Function to advance to the next slide
-  function plusSlides(n) {
-    showSlides((slideIndex += n));
-  }
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      Swal.fire({
+        position: 'center-center',
+        icon: 'success',
+        title: 'Đặt tour thành công',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    });
+  });
+    </script>
 
-  // Function to navigate to a specific slide
-  function currentSlide(n) {
-    showSlides((slideIndex = n));
-  }
-
-  // Automatically advance to the next slide every 3 seconds (3000 milliseconds)
-  setInterval(function () {
-    plusSlides(1);
-  }, 5000);
-
-  // Initialize the slider
-  showSlides(slideIndex);
-</script>
-
-<div class="d-flex flex-row mx-32">
-    <div class="text-3xl p-3 width-75 grid grid-rows-2">
-        <span class="text-gray-600 text-2xl">Tây Bắc: Hà Nội - Nghĩa Lộ - Tú Lệ - Mù Cang Chải - Sapa - Fansipan - Lai
-            Châu - Điện Biên - Sơn La - Mộc Châu
-            Island</span>
+    <div class="d-flex flex-row mx-32">
+      <div class="text-3xl p-3 width-75 grid grid-rows-2">
+        <span class="text-gray-600 text-2xl"
+          >Tây Bắc: Hà Nội - Nghĩa Lộ - Tú Lệ - Mù Cang Chải - Sapa - Fansipan -
+          Lai Châu - Điện Biên - Sơn La - Mộc Châu Island</span
+        >
         <span class="mt-3 text-gray-400 text-sm">Tây bắc</span>
-    </div>
-    <div class="width-25 text-white grid grid-rows-2 pl-6 pb-6 gap-4 mr-3">
-        <div class="cursor-pointer rounded shadow bg-red-400 p-4 px-5">Đặt ngay</div>
-        <div class="cursor-pointer rounded shadow bg-blue-400 p-4">Liên hệ tư vấn</div>
-    </div>
-</div>
-
-<div class="d-flex mx-32">
-    <div class="width-60 p-3">
-        <img style="height: 100%;" class="rounded-2xl"
-            src="https://media.travel.com.vn/tour/tfd_221212091808_874768.jpg" alt="">
+      </div>
+      <div class="width-25 text-white grid grid-rows-2 pl-6 pb-6 gap-4 mr-3">
+        <div class="cursor-pointer rounded shadow bg-red-400 p-4 px-5">
+          Đặt ngay
+        </div>
+        <div class="cursor-pointer rounded shadow bg-blue-400 p-4">
+          Liên hệ tư vấn
+        </div>
+      </div>
     </div>
 
-    <div class="width-40 d-flex flex-column">
+    <div class="d-flex mx-32">
+      <div class="width-60 p-3">
+        <img
+          style="height: 100%"
+          class="rounded-2xl"
+          src="https://media.travel.com.vn/tour/tfd_221212091808_874768.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="width-40 d-flex flex-column">
         <div class="d-flex">
-            <div class="m-3 width-50">
-                <img class="rounded-2xl" style="height: 12rem;width: 100%;"
-                    src="https://media.travel.com.vn/tour/tfd_230908012658_257812_dc%20long%20coc.jpg" alt="">
-            </div>
-            <div class="m-3 width-50">
-                <img class="rounded-2xl" style="height: 12rem;width: 100%;"
-                    src="https://media.travel.com.vn/tour/tfd_220614045613_483997.jpg" alt="">
-            </div>
+          <div class="m-3 width-50">
+            <img
+              class="rounded-2xl"
+              style="height: 12rem; width: 100%"
+              src="https://media.travel.com.vn/tour/tfd_230908012658_257812_dc%20long%20coc.jpg"
+              alt=""
+            />
+          </div>
+          <div class="m-3 width-50">
+            <img
+              class="rounded-2xl"
+              style="height: 12rem; width: 100%"
+              src="https://media.travel.com.vn/tour/tfd_220614045613_483997.jpg"
+              alt=""
+            />
+          </div>
         </div>
 
         <div class="p-3 width-100">
-            <img class="rounded-2xl" style="height: 17rem;width: 100%;"
-                src="https://media.travel.com.vn/tour/tfd_220614045823_403022.jpg" alt="">
+          <img
+            class="rounded-2xl"
+            style="height: 17rem; width: 100%"
+            src="https://media.travel.com.vn/tour/tfd_220614045823_403022.jpg"
+            alt=""
+          />
         </div>
+      </div>
     </div>
-</div>
 
-
-<div class="d-flex" style="margin: 0rem 8rem;">
-    <span class="width-40 pl-0 ml-3 mx-3 rounded text-left text-2xl text-gray-600">Thông tin dịch vụ</span>
-    <span class="width-40 pl-0 ml-3 mx-3 rounded text-left text-2xl text-gray-600">Thông tin dịch vụ</span>
-</div>
-<div class="d-flex" style="margin: 0rem 8rem;">
-    <div class="width-40 p-4 pl-0 m-3 rounded">
+    <div class="d-flex" style="margin: 0rem 8rem">
+      <span
+        class="width-40 pl-0 ml-3 mx-3 rounded text-left text-2xl text-gray-600"
+        >Thông tin dịch vụ</span
+      >
+      <span
+        class="width-40 pl-0 ml-3 mx-3 rounded text-left text-2xl text-gray-600"
+        >Thông tin dịch vụ</span
+      >
+    </div>
+    <div class="d-flex" style="margin: 0rem 8rem">
+      <div class="width-40 p-4 pl-0 m-3 rounded">
         <ul class="grid gap-4">
-            <li class="cursor-pointer border-l-2 width-100">Khởi hành 19/10/2023 - Giờ đi: 09:40</li>
-            <li class="cursor-pointer border-l-2 width-100">Tập trung 00:00 ngày 19/10/2023</li>
-            <li class="cursor-pointer border-l-2 width-100">Thời gian 4 ngày</li>
-            <li class="cursor-pointer border-l-2 width-100">Nơi khởi hành Đà Nẵng</li>
-            <li class="cursor-pointer border-l-2 width-100">Số chỗ còn nhận 6</li>
+          <li class="cursor-pointer border-l-2 width-100">
+            Khởi hành 19/10/2023 - Giờ đi: 09:40
+          </li>
+          <li class="cursor-pointer border-l-2 width-100">
+            Tập trung 00:00 ngày 19/10/2023
+          </li>
+          <li class="cursor-pointer border-l-2 width-100">Thời gian 4 ngày</li>
+          <li class="cursor-pointer border-l-2 width-100">
+            Nơi khởi hành Đà Nẵng
+          </li>
+          <li class="cursor-pointer border-l-2 width-100">Số chỗ còn nhận 6</li>
         </ul>
-    </div>
-    <div class="width-60 p-4 pr-3 m-3 mr-0 rounded">
+      </div>
+      <div class="width-60 p-4 pr-3 m-3 mr-0 rounded">
         <ul>
-            <li class="bg-white d-flex flex-column-3">
-                <!-- set start grid item -->
-                <div class="flex-column text-center">
-                    <span class="grid-cols-4" style="height: 1rem; width: 4rem; line-height: 3rem;">Ngày</span>
-                    <div class=" bg-red-400 text-white rounded-full text-left"
-                        style=" width: 3rem; height: 3rem; text-align: center; padding-top: .7rem; vertical-align: middle;">
-                        1</div>
-                </div>
-                <div class="grid grid-rows-2 p-4">
-                    <span class="text-gray-500">19/10/2023</span>
-                    <span class="text-gray-700">Đà Nẵng - Nội Bài (Hà Nội) – Hà Nội (Ăn trưa, tối)</span>
-                </div>
-            </li>
-            <li class="bg-white d-flex flex-column-3">
-                <!-- set start grid item -->
-                <div class="flex-column text-center">
-                    <span class="grid-cols-4" style="height: 1rem; width: 4rem; line-height: 3rem;">Ngày</span>
-                    <div class=" bg-red-400 text-white rounded-full text-left"
-                        style=" width: 3rem; height: 3rem; text-align: center; padding-top: .7rem; vertical-align: middle;">
-                        2</div>
-                </div>
-                <div class="grid grid-rows-2 p-4">
-                    <span class="text-gray-500">19/10/2023</span>
-                    <span class="text-gray-700">Đà Nẵng - Nội Bài (Hà Nội) – Hà Nội (Ăn trưa, tối)</span>
-                </div>
-            </li>
-            <li class="bg-white d-flex flex-column-3">
-                <!-- set start grid item -->
-                <div class="flex-column text-center">
-                    <span class="grid-cols-4" style="height: 1rem; width: 4rem; line-height: 3rem;">Ngày</span>
-                    <div class=" bg-red-400 text-white rounded-full text-left"
-                        style=" width: 3rem; height: 3rem; text-align: center; padding-top: .7rem; vertical-align: middle;">
-                        3</div>
-                </div>
-                <div class="grid grid-rows-2 p-4">
-                    <span class="text-gray-500">19/10/2023</span>
-                    <span class="text-gray-700">Đà Nẵng - Nội Bài (Hà Nội) – Hà Nội (Ăn trưa, tối)</span>
-                </div>
-            </li>
-            <li class="bg-white d-flex flex-column-3">
-                <!-- set start grid item -->
-                <div class="flex-column text-center">
-                    <span class="grid-cols-4" style="height: 1rem; width: 4rem; line-height: 3rem;">Ngày</span>
-                    <div class=" bg-red-400 text-white rounded-full text-left"
-                        style=" width: 3rem; height: 3rem; text-align: center; padding-top: .7rem; vertical-align: middle;">
-                        4</div>
-                </div>
-                <div class="grid grid-rows-2 p-4">
-                    <span class="text-gray-500">19/10/2023</span>
-                    <span class="text-gray-700">Đà Nẵng - Nội Bài (Hà Nội) – Hà Nội (Ăn trưa, tối)</span>
-                </div>
-            </li>
+          <li class="bg-white d-flex flex-column-3">
+            <!-- set start grid item -->
+            <div class="flex-column text-center">
+              <span
+                class="grid-cols-4"
+                style="height: 1rem; width: 4rem; line-height: 3rem"
+                >Ngày</span
+              >
+              <div
+                class="bg-red-400 text-white rounded-full text-left"
+                style="
+                  width: 3rem;
+                  height: 3rem;
+                  text-align: center;
+                  padding-top: 0.7rem;
+                  vertical-align: middle;
+                "
+              >
+                1
+              </div>
+            </div>
+            <div class="grid grid-rows-2 p-4">
+              <span class="text-gray-500">19/10/2023</span>
+              <span class="text-gray-700"
+                >Đà Nẵng - Nội Bài (Hà Nội) – Hà Nội (Ăn trưa, tối)</span
+              >
+            </div>
+          </li>
+          <li class="bg-white d-flex flex-column-3">
+            <!-- set start grid item -->
+            <div class="flex-column text-center">
+              <span
+                class="grid-cols-4"
+                style="height: 1rem; width: 4rem; line-height: 3rem"
+                >Ngày</span
+              >
+              <div
+                class="bg-red-400 text-white rounded-full text-left"
+                style="
+                  width: 3rem;
+                  height: 3rem;
+                  text-align: center;
+                  padding-top: 0.7rem;
+                  vertical-align: middle;
+                "
+              >
+                2
+              </div>
+            </div>
+            <div class="grid grid-rows-2 p-4">
+              <span class="text-gray-500">19/10/2023</span>
+              <span class="text-gray-700"
+                >Đà Nẵng - Nội Bài (Hà Nội) – Hà Nội (Ăn trưa, tối)</span
+              >
+            </div>
+          </li>
+          <li class="bg-white d-flex flex-column-3">
+            <!-- set start grid item -->
+            <div class="flex-column text-center">
+              <span
+                class="grid-cols-4"
+                style="height: 1rem; width: 4rem; line-height: 3rem"
+                >Ngày</span
+              >
+              <div
+                class="bg-red-400 text-white rounded-full text-left"
+                style="
+                  width: 3rem;
+                  height: 3rem;
+                  text-align: center;
+                  padding-top: 0.7rem;
+                  vertical-align: middle;
+                "
+              >
+                3
+              </div>
+            </div>
+            <div class="grid grid-rows-2 p-4">
+              <span class="text-gray-500">19/10/2023</span>
+              <span class="text-gray-700"
+                >Đà Nẵng - Nội Bài (Hà Nội) – Hà Nội (Ăn trưa, tối)</span
+              >
+            </div>
+          </li>
+          <li class="bg-white d-flex flex-column-3">
+            <!-- set start grid item -->
+            <div class="flex-column text-center">
+              <span
+                class="grid-cols-4"
+                style="height: 1rem; width: 4rem; line-height: 3rem"
+                >Ngày</span
+              >
+              <div
+                class="bg-red-400 text-white rounded-full text-left"
+                style="
+                  width: 3rem;
+                  height: 3rem;
+                  text-align: center;
+                  padding-top: 0.7rem;
+                  vertical-align: middle;
+                "
+              >
+                4
+              </div>
+            </div>
+            <div class="grid grid-rows-2 p-4">
+              <span class="text-gray-500">19/10/2023</span>
+              <span class="text-gray-700"
+                >Đà Nẵng - Nội Bài (Hà Nội) – Hà Nội (Ăn trưa, tối)</span
+              >
+            </div>
+          </li>
         </ul>
+      </div>
     </div>
-</div>
 
-<div class="d-flex justify-content-center my-6">
-    <span class="text-center text-2xl text-gray-500">Những thông tin cần lưu ý</span>
-</div>
+    <div class="d-flex justify-content-center my-6">
+      <span class="text-center text-2xl text-gray-500"
+        >Những thông tin cần lưu ý</span
+      >
+    </div>
 
-<div class="grid grid-cols-2 gap-20" style="margin: 0rem 8rem;">
-    <div class="left">
+    <div class="grid grid-cols-2 gap-20" style="margin: 0rem 8rem">
+      <div class="left">
         <ul class="grid">
-            <li class="bg-gray-50 p-6  flex justify-content-between">
-                <span>Giá tour bao gồm</span>
-                <span><img style="width: 1rem;" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt=""></span>
-            </li>
-            <p class="bg-white p-5 mb-2 hidden">
-              - Xe tham quan (15, 25, 35, 45 chỗ tùy theo số lượng khách) theo chương trình<br>
-              - Vé máy bay khứ hồi SGN - DAD - SGN<br>
-              - Hành lý ký gửi: 20 kg, xách tay 7 kg/1 khách<br>
-              - Khách sạn theo tiêu chuẩn 2 khách/phòng hoặc 3 khách/phòng<br>
-              - Ăn theo chương trình, thực đơn món Việt (set menu)<br>
-              - Vé tham quan theo chương trình<br>
-              - Hướng dẫn viên tiếng Việt nối tuyến<br>
-              - Bảo hiểm du lịch với mức bồi thường cao nhất 120.000.000đ/vụ<br>
-              - Nón Vietravel + Nước suối + Khăn lạnh<br>
-              - Thuế VAT<br>
-            </p>
-            <li class="bg-gray-50 p-6  flex justify-content-between">
-                <span>Điều kiện khi thanh toán</span>
-                <span><img style="width: 1rem;" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt=""></span>
-            </li>
-            <p class="bg-white p-5 mb-2 hidden">
-              - Khi đăng ký đặt cọc 50% số tiền tour.<br>
-              - Thanh toán hết trước ngày khởi hành 7-10 ngày (tour ngày thường), 20-25 ngày (tour lễ tết).<br>
-            </p>
-            <li class="bg-gray-50 p-6  flex justify-content-between">
-                <span>Giá vé trẻ em </span>
-                <span><img style="width: 1rem;" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt=""></span>
-            </li>
-            <p class="bg-white p-5 mb-2 hidden">
-              - Trẻ em dưới 5 tuổi: không thu phí dịch vụ, bố mẹ tự lo cho bé và thanh toán các chi phí phát sinh (đối với các dịch vụ tính phí theo chiều cao…). Hai người lớn chỉ được kèm 1 trẻ em dưới 5 tuổi, trẻ em thứ 2 sẽ đóng phí theo qui định dành cho độ tuổi từ 5 đến dưới 12 tuổi và phụ thu phòng đơn. Vé máy bay, tàu hỏa, phương tiện vận chuyển công cộng mua vé theo qui định của các đơn vị vận chuyển.<br>
-              - Trẻ em từ 5 tuổi đến dưới 12 tuổi: 75% giá tour người lớn (không có chế độ giường riêng). Hai người lớn chỉ được kèm 1 trẻ em từ 5 - dưới 12 tuổi, em thứ hai trở lên phải mua 1 suất giường đơn.<br>
-              - Trẻ em từ 12 tuổi trở lên: mua một vé như người lớn<br>
-            </p>
-            <li class="bg-gray-50 p-6  flex justify-content-between">
-                <span>Điều kiện khi đăng kí tour</span>
-                <span><img style="width: 1rem;" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt=""></span>
-            </li>
-            <p class="bg-white p-5 mb-2 hidden">
-              - Trong trường hợp Quý khách cung cấp tên sai, đến trễ giờ bay, vui lòng thanh toán phí đổi vé hoặc mua lại vé mới theo qui định của Hãng Hàng Không (nếu chuyến bay còn chỗ).<br>
-              - Trong trường hợp Quý khách bay hãng hàng không Vietravel, Vietnam, Jetstar, Vietjet. Vé máy bay khuyến mãi không hoàn, không đổi, hủy, sai tên mất 100%. Vé Vietnam, Jetstar không bay chặng đi, tự động hủy chặng về.<br>
-              - Do các chuyến bay phụ thuộc vào các hãng Hàng Không và tình hình thực tế nên trong một số trường hợp giá vé, chuyến bay, giờ bay có thể thay đổi mà không được báo trước. Tùy vào tình hình thực tế, chương trình và điểm tham quan có thể linh động thay đổi thứ tự các điểm phù hợp điều kiện giờ bay và thời tiết thực tế. Vietravel sẽ không chịu trách nhiệm bảo đảm các điểm tham quan trong trường hợp:<br>
-              + Xảy ra thiên tai: bão lụt, hạn hán, động đất, dịch bệnh…<br>
-              + Sự cố về an ninh: khủng bố, biểu tình,..<br>
-              + Sự cố về hàng không: trục trặc kỹ thuật, an ninh, dời, hủy, hoãn chuyến bay.<br>
-              Nếu những trường hợp trên xảy ra, Vietravel sẽ xem xét để hoàn trả chi phí không tham quan cho khách trong điều kiện có thể (sau khi đã trừ lại các dịch vụ đã thực hiện….và không chịu trách nhiệm bồi thường thêm bất kỳ chi phí nào khác).<br>
-            </p>
+          <li class="bg-gray-50 p-6 flex justify-content-between">
+            <span>Giá tour bao gồm</span>
+            <span
+              ><img
+                style="width: 1rem"
+                src="https://www.svgrepo.com/show/80156/down-arrow.svg"
+                alt=""
+            /></span>
+          </li>
+          <p class="bg-white p-5 mb-2 hidden">
+            - Xe tham quan (15, 25, 35, 45 chỗ tùy theo số lượng khách) theo
+            chương trình<br />
+            - Vé máy bay khứ hồi SGN - DAD - SGN<br />
+            - Hành lý ký gửi: 20 kg, xách tay 7 kg/1 khách<br />
+            - Khách sạn theo tiêu chuẩn 2 khách/phòng hoặc 3 khách/phòng<br />
+            - Ăn theo chương trình, thực đơn món Việt (set menu)<br />
+            - Vé tham quan theo chương trình<br />
+            - Hướng dẫn viên tiếng Việt nối tuyến<br />
+            - Bảo hiểm du lịch với mức bồi thường cao nhất 120.000.000đ/vụ<br />
+            - Nón Vietravel + Nước suối + Khăn lạnh<br />
+            - Thuế VAT<br />
+          </p>
+          <li class="bg-gray-50 p-6 flex justify-content-between">
+            <span>Điều kiện khi thanh toán</span>
+            <span
+              ><img
+                style="width: 1rem"
+                src="https://www.svgrepo.com/show/80156/down-arrow.svg"
+                alt=""
+            /></span>
+          </li>
+          <p class="bg-white p-5 mb-2 hidden">
+            - Khi đăng ký đặt cọc 50% số tiền tour.<br />
+            - Thanh toán hết trước ngày khởi hành 7-10 ngày (tour ngày thường),
+            20-25 ngày (tour lễ tết).<br />
+          </p>
+          <li class="bg-gray-50 p-6 flex justify-content-between">
+            <span>Giá vé trẻ em </span>
+            <span
+              ><img
+                style="width: 1rem"
+                src="https://www.svgrepo.com/show/80156/down-arrow.svg"
+                alt=""
+            /></span>
+          </li>
+          <p class="bg-white p-5 mb-2 hidden">
+            - Trẻ em dưới 5 tuổi: không thu phí dịch vụ, bố mẹ tự lo cho bé và
+            thanh toán các chi phí phát sinh (đối với các dịch vụ tính phí theo
+            chiều cao…). Hai người lớn chỉ được kèm 1 trẻ em dưới 5 tuổi, trẻ em
+            thứ 2 sẽ đóng phí theo qui định dành cho độ tuổi từ 5 đến dưới 12
+            tuổi và phụ thu phòng đơn. Vé máy bay, tàu hỏa, phương tiện vận
+            chuyển công cộng mua vé theo qui định của các đơn vị vận chuyển.<br />
+            - Trẻ em từ 5 tuổi đến dưới 12 tuổi: 75% giá tour người lớn (không
+            có chế độ giường riêng). Hai người lớn chỉ được kèm 1 trẻ em từ 5 -
+            dưới 12 tuổi, em thứ hai trở lên phải mua 1 suất giường đơn.<br />
+            - Trẻ em từ 12 tuổi trở lên: mua một vé như người lớn<br />
+          </p>
+          <li class="bg-gray-50 p-6 flex justify-content-between">
+            <span>Điều kiện khi đăng kí tour</span>
+            <span
+              ><img
+                style="width: 1rem"
+                src="https://www.svgrepo.com/show/80156/down-arrow.svg"
+                alt=""
+            /></span>
+          </li>
+          <p class="bg-white p-5 mb-2 hidden">
+            - Trong trường hợp Quý khách cung cấp tên sai, đến trễ giờ bay, vui
+            lòng thanh toán phí đổi vé hoặc mua lại vé mới theo qui định của
+            Hãng Hàng Không (nếu chuyến bay còn chỗ).<br />
+            - Trong trường hợp Quý khách bay hãng hàng không Vietravel, Vietnam,
+            Jetstar, Vietjet. Vé máy bay khuyến mãi không hoàn, không đổi, hủy,
+            sai tên mất 100%. Vé Vietnam, Jetstar không bay chặng đi, tự động
+            hủy chặng về.<br />
+            - Do các chuyến bay phụ thuộc vào các hãng Hàng Không và tình hình
+            thực tế nên trong một số trường hợp giá vé, chuyến bay, giờ bay có
+            thể thay đổi mà không được báo trước. Tùy vào tình hình thực tế,
+            chương trình và điểm tham quan có thể linh động thay đổi thứ tự các
+            điểm phù hợp điều kiện giờ bay và thời tiết thực tế. Vietravel sẽ
+            không chịu trách nhiệm bảo đảm các điểm tham quan trong trường
+            hợp:<br />
+            + Xảy ra thiên tai: bão lụt, hạn hán, động đất, dịch bệnh…<br />
+            + Sự cố về an ninh: khủng bố, biểu tình,..<br />
+            + Sự cố về hàng không: trục trặc kỹ thuật, an ninh, dời, hủy, hoãn
+            chuyến bay.<br />
+            Nếu những trường hợp trên xảy ra, Vietravel sẽ xem xét để hoàn trả
+            chi phí không tham quan cho khách trong điều kiện có thể (sau khi đã
+            trừ lại các dịch vụ đã thực hiện….và không chịu trách nhiệm bồi
+            thường thêm bất kỳ chi phí nào khác).<br />
+          </p>
         </ul>
-    </div>
-    <div class="right">
+      </div>
+      <div class="right">
         <ul class="grid">
-            <li class="bg-gray-50 p-6  flex justify-content-between">
-                <span>Trường hợp bất khả kháng</span>
-                <span><img style="width: 1rem;" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt=""></span>
-            </li>
-            <p class="bg-white p-5 mb-2 hidden">
-              Nếu chương trình du lịch bị hủy bỏ hoặc thay đổi bởi một trong hai bên vì lý do bất khả kháng (hỏa hoạn, thời tiết, tai nạn, thiên tai, chiến tranh, dịch bệnh, hoãn, dời, và hủy chuyến hoặc thay đổi khác của các phương tiện vận chuyển công cộng hoặc các sự việc bất khả kháng khác theo quy định pháp luật…), thì hai bên sẽ không chịu bất kỳ nghĩa vụ bồi hoàn các tổn thất đã xảy ra và không chịu bất kỳ trách nhiệm pháp lý nào. Tuy nhiên mỗi bên có trách nhiệm cố gắng tối đa để giúp đỡ bên bị thiệt hại nhằm giảm thiểu các tổn thất gây ra vì lý do bất khả kháng.
-            </p>
-            <li class="bg-gray-50 p-6  flex justify-content-between">
-                <span>Lưu ý khi chuyển/ hủy tour</span>
-                <span><img style="width: 1rem;" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt=""></span>
-            </li>
-            <p class="bg-white p-5 mb-2 hidden">
-              - Sau khi đóng tiền, nếu Quý khách muốn chuyển/hủy tour xin vui lòng mang Vé Du Lịch đến văn phòng đăng ký tour để làm thủ tục chuyển/hủy tour và chịu mất phí theo quy định của Vietravel. Không giải quyết các trường hợp liên hệ chuyển/hủy tour qua điện thoại.
-            </p>
-            <li class="bg-gray-50 p-6  flex justify-content-between">
-                <span>Các điều kiện hủy tour đối với ngày thường/lễ tết</span>
-                <span><img style="width: 1rem;" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt=""></span>
-            </li>
-            <p class="bg-white p-5 mb-2 hidden">
-              ĐỐI VỚI NGÀY THƯỜNG<br>
-              - Được chuyển sang các tuyến du lịch khác trước ngày khởi hành 20 ngày : Không mất chi phí.<br>
-              - Nếu hủy hoặc chuyển sang các chuyến du lịch khác ngay sau khi đăng ký đến từ 15-19 ngày trước ngày khởi hành: Chi phí hủy tour: 50% tiền cọc tour.<br>
-              - Nếu hủy hoặc chuyển sang các chuyến du lịch khác từ 12-14 ngày trước ngày khởi hành: Chi phí hủy tour: 100% tiền cọc tour.<br>
-              - Nếu hủy chuyến du lịch trong vòng từ 08-11 ngày trước ngày khởi hành: Chi phí hủy tour: 50% trên giá tour du lịch.<br>
-              - Nếu hủy chuyến du lịch trong vòng từ 05-07 ngày trước ngày khởi hành: Chi phí hủy tour: 70% trên giá tour du lịch.<br>
-              - Nếu hủy chuyến du lịch trong vòng từ 02-04 ngày trước ngày khởi hành: Chi phí hủy tour: 90% trên giá vé du lịch.<br>
-              - Nếu hủy chuyến du lịch trong vòng 1 ngày trước ngày khởi hành : Chi phí hủy tour: 100% trên giá vé du lịch.<br>
-              ĐỐI VỚI NGÀY LỄ TẾT<br>
-              Được chuyển sang các tuyến du lịch khác trước ngày khởi hành 30 ngày : Không mất chi phí.<br>
-              - Nếu hủy hoặc chuyển sang các chuyến khác ngay sau khi đăng ký đến từ 25-29 ngày trước ngày khởi hành: Chi phí hủy tour: 50% tiền cọc tour.<br>
-              - Nếu hủy hoặc chuyển sang các chuyến khác từ 20-24 ngày trước ngày khởi hành: Chi phí hủy tour: 100% tiền cọc tour.<br>
-              - Nếu hủy chuyến du lịch trong vòng từ 17-19 ngày trước ngày khởi hành: Chi phí hủy tour: 50% trên giá tour du lịch.<br>
-              - Nếu hủy chuyến du lịch trong vòng từ 08-16 ngày trước ngày khởi hành: Chi phí hủy tour: 70% trên giá tour du lịch.<br>
-              - Nếu hủy chuyến du lịch trong vòng từ 02-07 ngày trước ngày khởi hành: Chi phí hủy tour: 90% trên giá vé du lịch.<br>
-              - Nếu hủy chuyến du lịch trong vòng 1 ngày trước ngày khởi hành : Chi phí hủy tour: 100% trên giá vé du lịch.<br>
-            </p>
-            <li class="bg-gray-50 p-6  flex justify-content-between">
-                <span>Liên hệ</span>
-                <span><img style="width: 1rem;" src="https://www.svgrepo.com/show/80156/down-arrow.svg" alt=""></span>
-            </li>
-            <p class="bg-white p-5 mb-2 hidden">
-              Mọi chi tiết vui lòng liên hệ:
-              Đông Á Tourist <br>
-              Toà nhà Đại học Công nghệ Đông Á, P. Trịnh Văn Bô, Xuân Phương, Nam Từ Liêm, Hà Nội<br>
-              Điện thoại: 09887237361<br>
-              Tổng đài: 2004 0305<br>
-              Hotline: 09887237361<br>
-              
-            </p>
+          <li class="bg-gray-50 p-6 flex justify-content-between">
+            <span>Trường hợp bất khả kháng</span>
+            <span
+              ><img
+                style="width: 1rem"
+                src="https://www.svgrepo.com/show/80156/down-arrow.svg"
+                alt=""
+            /></span>
+          </li>
+          <p class="bg-white p-5 mb-2 hidden">
+            Nếu chương trình du lịch bị hủy bỏ hoặc thay đổi bởi một trong hai
+            bên vì lý do bất khả kháng (hỏa hoạn, thời tiết, tai nạn, thiên tai,
+            chiến tranh, dịch bệnh, hoãn, dời, và hủy chuyến hoặc thay đổi khác
+            của các phương tiện vận chuyển công cộng hoặc các sự việc bất khả
+            kháng khác theo quy định pháp luật…), thì hai bên sẽ không chịu bất
+            kỳ nghĩa vụ bồi hoàn các tổn thất đã xảy ra và không chịu bất kỳ
+            trách nhiệm pháp lý nào. Tuy nhiên mỗi bên có trách nhiệm cố gắng
+            tối đa để giúp đỡ bên bị thiệt hại nhằm giảm thiểu các tổn thất gây
+            ra vì lý do bất khả kháng.
+          </p>
+          <li class="bg-gray-50 p-6 flex justify-content-between">
+            <span>Lưu ý khi chuyển/ hủy tour</span>
+            <span
+              ><img
+                style="width: 1rem"
+                src="https://www.svgrepo.com/show/80156/down-arrow.svg"
+                alt=""
+            /></span>
+          </li>
+          <p class="bg-white p-5 mb-2 hidden">
+            - Sau khi đóng tiền, nếu Quý khách muốn chuyển/hủy tour xin vui lòng
+            mang Vé Du Lịch đến văn phòng đăng ký tour để làm thủ tục chuyển/hủy
+            tour và chịu mất phí theo quy định của Vietravel. Không giải quyết
+            các trường hợp liên hệ chuyển/hủy tour qua điện thoại.
+          </p>
+          <li class="bg-gray-50 p-6 flex justify-content-between">
+            <span>Các điều kiện hủy tour đối với ngày thường/lễ tết</span>
+            <span
+              ><img
+                style="width: 1rem"
+                src="https://www.svgrepo.com/show/80156/down-arrow.svg"
+                alt=""
+            /></span>
+          </li>
+          <p class="bg-white p-5 mb-2 hidden">
+            ĐỐI VỚI NGÀY THƯỜNG<br />
+            - Được chuyển sang các tuyến du lịch khác trước ngày khởi hành 20
+            ngày : Không mất chi phí.<br />
+            - Nếu hủy hoặc chuyển sang các chuyến du lịch khác ngay sau khi đăng
+            ký đến từ 15-19 ngày trước ngày khởi hành: Chi phí hủy tour: 50%
+            tiền cọc tour.<br />
+            - Nếu hủy hoặc chuyển sang các chuyến du lịch khác từ 12-14 ngày
+            trước ngày khởi hành: Chi phí hủy tour: 100% tiền cọc tour.<br />
+            - Nếu hủy chuyến du lịch trong vòng từ 08-11 ngày trước ngày khởi
+            hành: Chi phí hủy tour: 50% trên giá tour du lịch.<br />
+            - Nếu hủy chuyến du lịch trong vòng từ 05-07 ngày trước ngày khởi
+            hành: Chi phí hủy tour: 70% trên giá tour du lịch.<br />
+            - Nếu hủy chuyến du lịch trong vòng từ 02-04 ngày trước ngày khởi
+            hành: Chi phí hủy tour: 90% trên giá vé du lịch.<br />
+            - Nếu hủy chuyến du lịch trong vòng 1 ngày trước ngày khởi hành :
+            Chi phí hủy tour: 100% trên giá vé du lịch.<br />
+            ĐỐI VỚI NGÀY LỄ TẾT<br />
+            Được chuyển sang các tuyến du lịch khác trước ngày khởi hành 30 ngày
+            : Không mất chi phí.<br />
+            - Nếu hủy hoặc chuyển sang các chuyến khác ngay sau khi đăng ký đến
+            từ 25-29 ngày trước ngày khởi hành: Chi phí hủy tour: 50% tiền cọc
+            tour.<br />
+            - Nếu hủy hoặc chuyển sang các chuyến khác từ 20-24 ngày trước ngày
+            khởi hành: Chi phí hủy tour: 100% tiền cọc tour.<br />
+            - Nếu hủy chuyến du lịch trong vòng từ 17-19 ngày trước ngày khởi
+            hành: Chi phí hủy tour: 50% trên giá tour du lịch.<br />
+            - Nếu hủy chuyến du lịch trong vòng từ 08-16 ngày trước ngày khởi
+            hành: Chi phí hủy tour: 70% trên giá tour du lịch.<br />
+            - Nếu hủy chuyến du lịch trong vòng từ 02-07 ngày trước ngày khởi
+            hành: Chi phí hủy tour: 90% trên giá vé du lịch.<br />
+            - Nếu hủy chuyến du lịch trong vòng 1 ngày trước ngày khởi hành :
+            Chi phí hủy tour: 100% trên giá vé du lịch.<br />
+          </p>
+          <li class="bg-gray-50 p-6 flex justify-content-between">
+            <span>Liên hệ</span>
+            <span
+              ><img
+                style="width: 1rem"
+                src="https://www.svgrepo.com/show/80156/down-arrow.svg"
+                alt=""
+            /></span>
+          </li>
+          <p class="bg-white p-5 mb-2 hidden">
+            Mọi chi tiết vui lòng liên hệ: Đông Á Tourist <br />
+            Toà nhà Đại học Công nghệ Đông Á, P. Trịnh Văn Bô, Xuân Phương, Nam
+            Từ Liêm, Hà Nội<br />
+            Điện thoại: 09887237361<br />
+            Tổng đài: 2004 0305<br />
+            Hotline: 09887237361<br />
+          </p>
         </ul>
+      </div>
     </div>
-</div>
 
-<!-- phần footer -->
-<h1 class="footer text-center text-gray-500 text-2xl my-12">Vì sao chọn ĐÔNG Á TOURIST</h1>
-<div class="grid grid-flow-col grid-cols-3 text-center mb-12">
-    <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl">
-             Mạng bán tour
-        </div>
-        <img class="rounded-md" style="margin: 0 auto;width: 7rem; height: 7rem;"
-            src="../static/img/fooder1.jpg" alt="">
+    <!-- phần footer -->
+    <h1 class="footer text-center text-gray-500 text-2xl my-12">
+      Vì sao chọn ĐÔNG Á TOURIST
+    </h1>
+    <div class="grid grid-flow-col grid-cols-3 text-center mb-12">
+      <div class="mx-8 bg-white shadow rounded p-3">
+        <div class="text-gray-500 text-xl"> Mạng bán tour</div>
+        <img
+          class="rounded-md"
+          style="margin: 0 auto; width: 7rem; height: 7rem"
+          src="../static/img/fooder1.jpg"
+          alt=""
+        />
         <div class="text-gray-500 text-sm">
-            Đầu tiên tại Việt Nam, đặt tour du lịch trực tuyến.
+          Đầu tiên tại Việt Nam, đặt tour du lịch trực tuyến.
         </div>
+      </div>
+      <div class="mx-8 bg-white shadow rounded p-3">
+        <div class="text-gray-500 text-xl"> Sản Phẩm và dịch vụ</div>
+        <img
+          class="rounded-md"
+          style="margin: 0 auto; width: 7rem; height: 7rem"
+          src="../static/img/fooder2.jpg"
+          alt=""
+        />
+        <div class="text-gray-500 text-sm">Đa dạng - Chất Lượng - An Toàn</div>
+      </div>
+      <div class="mx-8 bg-white shadow rounded p-3">
+        <div class="text-gray-500 text-xl"> Giá cả</div>
+        <img
+          class="rounded-md"
+          style="margin: 0 auto; width: 7rem; height: 7rem"
+          src="../static/img/fooder3.jpg"
+          alt=""
+        />
+        <div class="text-gray-500 text-sm">Luôn có mức giá Tốt</div>
+      </div>
     </div>
-    <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl">
-             Sản Phẩm và dịch vụ
-        </div>
-        <img class="rounded-md" style="margin: 0 auto;width: 7rem; height: 7rem;"
-            src="../static/img/fooder2.jpg" alt="">
-        <div class="text-gray-500 text-sm">
-            Đa dạng - Chất Lượng - An Toàn
-        </div>
+    <div class="grid grid-flow-col grid-cols-3 text-center mb-12">
+      <div class="mx-8 bg-white shadow rounded p-3">
+        <div class="text-gray-500 text-xl"> Hỗ trợ khách hàng</div>
+        <img
+          class="rounded-md"
+          style="margin: 0 auto; width: 7rem; height: 7rem"
+          src="../static/img/fooder4.jpg"
+          alt=""
+        />
+        <div class="text-gray-500 text-sm">Hotline 24/7 - Trực tuyến</div>
+      </div>
+      <div class="mx-8 bg-white shadow rounded p-3">
+        <div class="text-gray-500 text-xl">Đặt tour du lịch</div>
+        <img
+          class="rounded-md"
+          style="margin: 0 auto; width: 7rem; height: 7rem"
+          src="../static/img/fooder5.jpg"
+          alt=""
+        />
+        <div class="text-gray-500 text-sm">Dễ dàng nhanh chóng và tiện lợi</div>
+      </div>
+      <div class="mx-8 bg-white shadow rounded p-3">
+        <div class="text-gray-500 text-xl">Thanh Toán</div>
+        <img
+          class="rounded-md"
+          style="margin: 0 auto; width: 7rem; height: 7rem"
+          src="../static/img/fooder6.jpg"
+          alt=""
+        />
+        <div class="text-gray-500 text-sm">An toàn - Tiện lợi - Đa dạng</div>
+      </div>
     </div>
-    <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl">
-             Giá cả
-        </div>
-        <img class="rounded-md" style="margin: 0 auto;width: 7rem; height: 7rem;"
-            src="../static/img/fooder3.jpg" alt="">
-        <div class="text-gray-500 text-sm">
-            Luôn có mức giá Tốt
-        </div>
-    </div>
-</div>
-<div class="grid grid-flow-col grid-cols-3 text-center mb-12">
-    <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl">
-             Hỗ trợ khách hàng
-        </div>
-        <img class="rounded-md" style="margin: 0 auto;width: 7rem; height: 7rem;"
-            src="../static/img/fooder4.jpg" alt="">
-        <div class="text-gray-500 text-sm">
-            Hotline 24/7 - Trực tuyến
-        </div>
-    </div>
-    <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl">
-            Đặt tour du lịch
-        </div>
-        <img class="rounded-md" style="margin: 0 auto;width: 7rem; height: 7rem;"
-            src="../static/img/fooder5.jpg" alt="">
-        <div class="text-gray-500 text-sm">
-            Dễ dàng nhanh chóng và tiện lợi
-        </div>
-    </div>
-    <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl">
-            Thanh Toán
-        </div>
-        <img class="rounded-md" style="margin: 0 auto;width: 7rem; height: 7rem;"
-            src="../static/img/fooder6.jpg" alt="">
-        <div class="text-gray-500 text-sm">
-            An toàn - Tiện lợi - Đa dạng
-        </div>
-    </div>
-</div>
 
-<div class="d-flex justify-content-around bg-dark text-white ">
-    <div class="d-flex flex-column padding-15">
+    <div class="d-flex justify-content-around bg-dark text-white">
+      <div class="d-flex flex-column padding-15">
         <div class="font-bold">Về chúng tôi</div>
         <div class="padding-top-5"><a href="gioithieu.html">Giới thiệu</a></div>
         <div class="padding-top-5">Điều khoản sử dụng</div>
         <div class="padding-top-5">Chính sách bảo mật</div>
         <div class="padding-top-5">Quy chế hoạt động</div>
-    </div>
-    <div class="d-flex flex-column padding-15">
+      </div>
+      <div class="d-flex flex-column padding-15">
         <div class="font-bold">Hỗ trợ khách hàng</div>
         <div class="padding-top-5">Hướng dẫn đặt tour</div>
         <div class="padding-top-5">Hướng dẫn thanh toán</div>
         <div class="padding-top-5">Hướng dẫn đăng ký</div>
         <div class="padding-top-5">Hướng dẫn đăng nhập</div>
-    </div>
-    <div class="d-flex flex-column padding-15">
+      </div>
+      <div class="d-flex flex-column padding-15">
         <div class="font-bold">Liên hệ</div>
         <div class="padding-top-5">Địa chỉ: 123 Lê Duẩn, Hà Nội</div>
         <div class="padding-top-5">Email: oanhvu1503@gmail.com</div>
         <div class="padding-top-5">Sđt: 09887237361</div>
+      </div>
     </div>
-</div>
 
-</body>
+    <script>
+      var header1 = document.getElementById("header1");
+      var header2 = document.getElementById("header2");
+ var buttons = Array.from(document.querySelectorAll("button")).filter((button) => {
+    return button.innerText == "Đặt tour";
+  });
 
+  buttons.forEach((button) => {
+    // set href = "#" attribute from a tag which is parent of button
+    button.parentElement.removeAttribute("href");
+    
+  });
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      Swal.fire({
+        position: 'center-center',
+        icon: 'success',
+        title: 'Đặt tour thành công',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    });
+  });
+      
+      window.addEventListener("scroll", function () {
+        header1.classList.toggle("bg-white", window.scrollY > 0);
+        header1.classList.toggle("text-white", window.scrollY == 0);
+        header2.classList.toggle("text-white", window.scrollY == 0);
+        header2.classList.toggle("bg-white", window.scrollY > 0);
+      });
+    </script>
+  </body>
 </html>
 
 <script>
-    let svgList = document.querySelectorAll('li > span > img');
-   // set svg rotate
-    svgList.forEach(svg => {
-        svg.addEventListener('click', () => {
-            svg.classList.toggle('rotate-180');
-            svg.parentElement.parentElement.nextElementSibling.classList.toggle('hidden');
-        })
-    })
-
+  let svgList = document.querySelectorAll("li > span > img");
+  // set svg rotate
+  svgList.forEach((svg) => {
+    svg.addEventListener("click", () => {
+      svg.classList.toggle("rotate-180");
+      svg.parentElement.parentElement.nextElementSibling.classList.toggle(
+        "hidden"
+      );
+    });
+  });
 </script>
 
 <style>
-    .hidden {
-        display: none;
-    }
+  .hidden {
+    display: none;
+  }
 </style>

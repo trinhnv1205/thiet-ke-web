@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web du lich</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.css"
     />
     <link rel="stylesheet" href="../static/css/main.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,7 +26,8 @@
 
   <body>
     <div
-      class="d-flex bg-transparent text-white justify-content-between font-size-14 px-5"
+      id="header1"
+      class="d-flex text-white justify-content-between font-size-14 px-5 sticky top-0"
     >
       <ul>
         <li>Email: oanhvu1503@gmail.com</li>
@@ -28,15 +39,15 @@
       </ul>
     </div>
 
-    <div class="d-flex text-white justify-content-between">
+    <div id="header2" class="d-flex text-white justify-content-between sticky top-0 py-2">
       <div class="d-flex align-items-center">
         <img
           id="logo"
-          class="border mx-5"
+          class="border-0 mx-5"
           src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/design/discover/mascot-logo-design/mascot-logo-design_fb-img_1200x800.jpg"
           alt=""
         />
-        <!-- <span class="font-size-18">ĐÔNG Á TOURIST</span> -->
+        <span class="font-size-18">ĐÔNG Á TOURIST</span>
       </div>
 
       <div class="d-flex flex-column">
@@ -367,6 +378,27 @@
 
       // Initialize the slider
       showSlides(slideIndex);
+  var buttons = Array.from(document.querySelectorAll("button")).filter((button) => {
+    return button.innerText == "Đặt tour";
+  });
+
+  buttons.forEach((button) => {
+    // set href = "#" attribute from a tag which is parent of button
+    button.parentElement.removeAttribute("href");
+    
+  });
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      Swal.fire({
+        position: 'center-center',
+        icon: 'success',
+        title: 'Đặt tour thành công',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    });
+  });
     </script>
     <h1 class="text-center padding-15 text-3xl">Miền Nam Tour</h1>
     <div>
@@ -380,7 +412,7 @@
           />
           <div class="padding-10">
             <div class="padding-bottom-10">
-              PHÚ QUỐC(Tham quan đảo bằng cano, lặng ngăm sanho)
+              PHÚ QUỐC (Tham quan đảo bằng cano, lặng ngăm sanho)
             </div>
             <hr />
             <div class="padding-top-5">
@@ -390,10 +422,10 @@
               <span class="font-bold">Phương tiện</span> : Xe du lịch
             </div>
             <div class="padding-top-5">
-              <span class="font-bold">Địa điểm xuất phát</span> : TP Hồ Chí Minh
+              <span class="font-bold">Địa điểm xuất phát</span> : Phú Quốc
             </div>
             <div class="padding-top-5">
-              <span class="font-bold">Giá</span> : 1.500k
+              <span class="font-bold">Giá</span> : 4.500k
             </div>
             <div>
               <a style="padding: 0" href="chitiet/phú-quốc-tham-quan.html">
@@ -439,14 +471,20 @@
               <span class="font-bold">Giá</span> : 4.500k
             </div>
             <div>
-              <a style="padding: 0" href="chitiet.html">
+              <a
+                style="padding: 0"
+                href="chitiet/tour-team-building-vũng-tàu.html"
+              >
                 <button
                   class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
                 >
                   Chi tiết
                 </button>
               </a>
-              <a style="padding: 0" href="chitiet.html">
+              <a
+                style="padding: 0"
+                href="chitiet/tour-team-building-vũng-tàu.html"
+              >
                 <button
                   class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
                 >
@@ -456,7 +494,7 @@
             </div>
           </div>
         </li>
-      
+
         <li class="width-100 p-10 d-flex flex-row rounded">
           <img
             class="rounded-2xl"
@@ -480,14 +518,20 @@
               <span class="font-bold">Giá</span> : 2.000k
             </div>
             <div>
-              <a style="padding: 0" href="chitiet.html">
+              <a
+                style="padding: 0"
+                href="chitiet/ninh-thuận-bình-thuận-phan-rang-vịnh.html"
+              >
                 <button
                   class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
                 >
                   Chi tiết
                 </button>
               </a>
-              <a style="padding: 0" href="chitiet.html">
+              <a
+                style="padding: 0"
+                href="chitiet/ninh-thuận-bình-thuận-phan-rang-vịnh.html"
+              >
                 <button
                   class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
                 >
@@ -506,7 +550,7 @@
           />
           <div class="padding-10">
             <div class="padding-bottom-10">
-             Vũng Tàu( Hồ Tràm - Rừng quốc gia Bình CHâu)
+              Vũng Tàu( Hồ Tràm - Rừng quốc gia Bình CHâu)
             </div>
             <hr />
             <div class="padding-top-5">
@@ -522,14 +566,20 @@
               <span class="font-bold">Giá</span> : 2.300k
             </div>
             <div>
-              <a style="padding: 0" href="chitiet.html">
+              <a
+                style="padding: 0"
+                href="chitiet/vũng-tàu-hồ-tràm-rừng-quốc-gia-bình-c-hâu.html"
+              >
                 <button
                   class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
                 >
                   Chi tiết
                 </button>
               </a>
-              <a style="padding: 0" href="chitiet.html">
+              <a
+                style="padding: 0"
+                href="chitiet/vũng-tàu-hồ-tràm-rừng-quốc-gia-bình-c-hâu.html"
+              >
                 <button
                   class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
                 >
@@ -548,11 +598,12 @@
           />
           <div class="padding-10">
             <div class="padding-bottom-10">
-              Tây Ninh(Núi bà đen - Tòa thánh Tây Ninh - Long Đền Sơn - Nông Trại Nam Trạng)
+              Tây Ninh (Núi bà đen - Tòa thánh Tây Ninh - Long Đền Sơn - Nông
+              Trại Nam Trạng)
             </div>
             <hr />
             <div class="padding-top-5">
-              <span class="font-bold">Thời gian</span> : 1 ngày 1 đêm
+              <span class="font-bold">Thời gian</span> : 2 ngày 1 đêm
             </div>
             <div class="padding-top-5">
               <span class="font-bold">Phương tiện</span> : Xe du lịch
@@ -564,14 +615,20 @@
               <span class="font-bold">Giá</span> : 3.000k
             </div>
             <div>
-              <a style="padding: 0" href="chitiet.html">
+              <a
+                style="padding: 0"
+                href="chitiet/tây-ninh-núi-bà-đen-tòa-thánh-tây-ninh-long.html"
+              >
                 <button
                   class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
                 >
                   Chi tiết
                 </button>
               </a>
-              <a style="padding: 0" href="chitiet.html">
+              <a
+                style="padding: 0"
+                href="chitiet/du-lịch-buôn-ma-thuột-buôn-đôn-pleiku-komtum-măng-đen.html"
+              >
                 <button
                   class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
                 >
@@ -589,9 +646,7 @@
             alt=""
           />
           <div class="padding-10">
-            <div class="padding-bottom-10">
-              Đồng Nai 
-            </div>
+            <div class="padding-bottom-10">Đồng Nai</div>
             <hr />
             <div class="padding-top-5">
               <span class="font-bold">Thời gian</span> : 2 ngày 1 đêm
@@ -606,14 +661,14 @@
               <span class="font-bold">Giá</span> : 2.300k
             </div>
             <div>
-              <a style="padding: 0" href="chitiet.html">
+              <a style="padding: 0" href="chitiet/đồng-nai.html">
                 <button
                   class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
                 >
                   Chi tiết
                 </button>
               </a>
-              <a style="padding: 0" href="chitiet.html">
+              <a style="padding: 0" href="chitiet/đồng-nai.html">
                 <button
                   class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
                 >
@@ -632,7 +687,7 @@
           />
           <div class="padding-10">
             <div class="padding-bottom-10">
-             Long An - Bến Tre - Tiền Giang - Đồng Tháp - Trà Vinh
+              Long An - Bến Tre - Tiền Giang - Đồng Tháp - Trà Vinh
             </div>
             <hr />
             <div class="padding-top-5">
@@ -648,14 +703,20 @@
               <span class="font-bold">Giá</span> : 7.300k
             </div>
             <div>
-              <a style="padding: 0" href="chitiet.html">
+              <a
+                style="padding: 0"
+                href="chitiet/long-an-bến-tre-tiền-giang-đồng-tháp-trà-vinh.html"
+              >
                 <button
                   class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
                 >
                   Chi tiết
                 </button>
               </a>
-              <a style="padding: 0" href="chitiet.html">
+              <a
+                style="padding: 0"
+                href="chitiet/long-an-bến-tre-tiền-giang-đồng-tháp-trà-vinh.html"
+              >
                 <button
                   class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
                 >
@@ -760,5 +821,36 @@
         <div class="padding-top-5">Sđt: 09887237361</div>
       </div>
     </div>
+    <script>
+      var header1 = document.getElementById("header1");
+      var header2 = document.getElementById("header2");
+ var buttons = Array.from(document.querySelectorAll("button")).filter((button) => {
+    return button.innerText == "Đặt tour";
+  });
+
+  buttons.forEach((button) => {
+    // set href = "#" attribute from a tag which is parent of button
+    button.parentElement.removeAttribute("href");
+    
+  });
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      Swal.fire({
+        position: 'center-center',
+        icon: 'success',
+        title: 'Đặt tour thành công',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    });
+  });
+      window.addEventListener("scroll", function () {
+        header1.classList.toggle("bg-white", window.scrollY > 0);
+        header1.classList.toggle("text-gray-500", window.scrollY > 0);
+        header2.classList.toggle("text-gray-500", window.scrollY > 0);
+        header2.classList.toggle("bg-white", window.scrollY > 0);
+      });
+    </script>
   </body>
 </html>

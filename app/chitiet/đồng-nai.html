@@ -9,7 +9,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.css"
     />
-    0
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +27,8 @@
 
   <body>
     <div
-      class="d-flex bg-transparent text-white justify-content-between font-size-14 px-5"
+      id="header1"
+      class="d-flex text-white justify-content-between font-size-14 px-5 sticky top-0"
     >
       <ul>
         <li>Email: oanhvu1503@gmail.com</li>
@@ -40,11 +40,14 @@
       </ul>
     </div>
 
-    <div class="d-flex text-white justify-content-between">
+    <div
+      id="header2"
+      class="d-flex text-white justify-content-between sticky top-0 py-2"
+    >
       <div class="d-flex align-items-center">
         <img
           id="logo"
-          class="border mx-5"
+          class="border-0 mx-5"
           src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/design/discover/mascot-logo-design/mascot-logo-design_fb-img_1200x800.jpg"
           alt=""
         />
@@ -379,36 +382,34 @@
 
       // Initialize the slider
       showSlides(slideIndex);
-  var buttons = Array.from(document.querySelectorAll("div")).filter((button) => {
-    return button.innerText == "Đặt ngay";
-  });
+      var buttons = Array.from(document.querySelectorAll("div")).filter(
+        (button) => {
+          return button.innerText == "Đặt ngay";
+        }
+      );
 
-  buttons.forEach((button) => {
-    // set href = "#" attribute from a tag which is parent of button
-    button.parentElement.removeAttribute("href");
-    
-  });
+      buttons.forEach((button) => {
+        // set href = "#" attribute from a tag which is parent of button
+        button.parentElement.removeAttribute("href");
+      });
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      Swal.fire({
-        position: 'center-center',
-        icon: 'success',
-        title: 'Đặt tour thành công',
-        showConfirmButton: false,
-        timer: 1500
-      })
-    });
-  });
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          Swal.fire({
+            position: "center-center",
+            icon: "success",
+            title: "Đặt tour thành công",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        });
+      });
     </script>
 
     <div class="d-flex flex-row mx-32">
       <div class="text-3xl p-3 width-75 grid grid-rows-2">
-        <span class="text-gray-600 text-2xl"
-          >HẢI PHONG - HÀ NAM ( Du lịch Hải Phòng - Chùa Tam Chúc - Chùa Địa
-          Tạng Phi Hà Nam)</span
-        >
-        <span class="mt-3 text-gray-400 text-sm">Tây bắc</span>
+        <span class="text-gray-600 text-2xl">Đồng Nai</span>
+        <span class="mt-3 text-gray-400 text-sm">Miền Nam</span>
       </div>
       <div class="width-25 text-white grid grid-rows-2 pl-6 pb-6 gap-4 mr-3">
         <div class="cursor-pointer rounded shadow bg-red-400 p-4 px-5">
@@ -425,7 +426,7 @@
         <img
           style="height: 100%"
           class="rounded-2xl"
-          src="../../static/img/_tamchuc.jpg"
+          src="https://cdn.tgdd.vn/Files/2021/06/30/1364495/top-10-dia-diem-du-lich-dong-nai-hap-dan-nhat-ban-khong-the-bo-qua-202106301957266642.jpg"
           alt=""
         />
       </div>
@@ -436,7 +437,7 @@
             <img
               class="rounded-2xl"
               style="height: 12rem; width: 100%"
-              src="../../static/img/_tangphi.jpg"
+              src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/10/thac-da-han-dong-nai-1-1.jpg"
               alt=""
             />
           </div>
@@ -444,7 +445,7 @@
             <img
               class="rounded-2xl"
               style="height: 12rem; width: 100%"
-              src="../../static/img/_tangphi2.jpg"
+              src="https://baodongnai.com.vn/file/e7837c02876411cd0187645a2551379f/dataimages/202306/original/images2529684_1A.jpg"
               alt=""
             />
           </div>
@@ -454,7 +455,7 @@
           <img
             class="rounded-2xl"
             style="height: 17rem; width: 100%"
-            src="https://media.vneconomy.vn/images/upload/2022/04/28/hai-phong-no-luc-doi-moi-53744.jpg"
+            src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-dong-nai-1.jpg?tr=dpr-2,w-675"
             alt=""
           />
         </div>
@@ -468,23 +469,25 @@
       >
       <span
         class="width-40 pl-0 ml-3 mx-3 rounded text-left text-2xl text-gray-600"
-        >Lịch trình</span
-      >
+        >Lịch trình du lịch
+      </span>
     </div>
     <div class="d-flex" style="margin: 0rem 8rem">
       <div class="width-40 p-4 pl-0 m-3 rounded">
         <ul class="grid gap-4">
           <li class="cursor-pointer border-l-2 width-100">
-            Khởi hành 19/10/2023 - Giờ đi: 09:40
+            Khởi hành 21/11/2023 - Giờ đi: 09:40
           </li>
           <li class="cursor-pointer border-l-2 width-100">
-            Tập trung 00:00 ngày 19/10/2023
+            Tập trung 00:00 ngày 21/11/2023
           </li>
-          <li class="cursor-pointer border-l-2 width-100">Thời gian 1 ngày</li>
           <li class="cursor-pointer border-l-2 width-100">
-            Nơi khởi hành Hà Nam
+            Thời gian 2 ngày 1 đêm
           </li>
-          <li class="cursor-pointer border-l-2 width-100">Số chỗ còn nhận 4</li>
+          <li class="cursor-pointer border-l-2 width-100">
+            Nơi khởi hành Đồng Nai
+          </li>
+          <li class="cursor-pointer border-l-2 width-100">Số chỗ còn nhận 9</li>
         </ul>
       </div>
       <div class="width-60 p-4 pr-3 m-3 mr-0 rounded">
@@ -511,9 +514,9 @@
               </div>
             </div>
             <div class="grid grid-rows-2 p-4">
-              <span class="text-gray-500">19/10/2023</span>
+              <span class="text-gray-500">21/11/2023</span>
               <span class="text-gray-700"
-                >Chùa Tam Chúc - Chùa Tạng Phi (Ăn trưa, tối)</span
+                >Vườn Quốc gia Nam Cát Tiên - Thác Giang Điền(Ăn 3 Bữa)</span
               >
             </div>
           </li>
@@ -539,16 +542,16 @@
               </div>
             </div>
             <div class="grid grid-rows-2 p-4">
-              <span class="text-gray-500">19/10/2023</span>
-              <span class="text-gray-700"> Hải Phòng (Ăn sáng - Ăn trưa)</span>
+              <span class="text-gray-500">22/11/2023</span>
+              <span class="text-gray-700"
+                >Khu du lịch Bửu Long - Khu du lịch Vườn Xoài (Ăn 2 Bữa)</span
+              >
             </div>
           </li>
         </ul>
       </div>
     </div>
-    <div>
-      <div class="d-flex my-6"></div>
-    </div>
+
     <div class="d-flex justify-content-center my-6">
       <span class="text-center text-2xl text-gray-500"
         >Những thông tin cần lưu ý</span
@@ -846,35 +849,36 @@
         <div class="padding-top-5">Sđt: 09887237361</div>
       </div>
     </div>
-  <script>
+
+    <script>
       var header1 = document.getElementById("header1");
       var header2 = document.getElementById("header2");
- var buttons = Array.from(document.querySelectorAll("div")).filter((button) => {
-    return button.innerText == "Đặt ngay";
-  });
+      var buttons = Array.from(document.querySelectorAll("div")).filter(
+        (button) => {
+          return button.innerText == "Đặt ngay";
+        }
+      );
 
-  buttons.forEach((button) => {
-    // set href = "#" attribute from a tag which is parent of button
-    button.parentElement.removeAttribute("href");
-    
-  });
+      buttons.forEach((button) => {
+        // set href = "#" attribute from a tag which is parent of button
+        button.parentElement.removeAttribute("href");
+      });
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      Swal.fire({
-        position: 'center-center',
-        icon: 'success',
-        title: 'Đặt tour thành công',
-        showConfirmButton: false,
-        timer: 1500
-      })
-    });
-  });
-      
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          Swal.fire({
+            position: "center-center",
+            icon: "success",
+            title: "Đặt tour thành công",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        });
+      });
       window.addEventListener("scroll", function () {
         header1.classList.toggle("bg-white", window.scrollY > 0);
-        header1.classList.toggle("text-white", window.scrollY == 0);
-        header2.classList.toggle("text-white", window.scrollY == 0);
+        header1.classList.toggle("text-gray-500", window.scrollY > 0);
+        header2.classList.toggle("text-gray-500", window.scrollY > 0);
         header2.classList.toggle("bg-white", window.scrollY > 0);
       });
     </script>

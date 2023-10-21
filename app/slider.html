@@ -313,4 +313,25 @@
 
   // Initialize the slider
   showSlides(slideIndex);
+  var buttons = Array.from(document.querySelectorAll("button")).filter((button) => {
+    return button.innerText == "Đặt tour";
+  });
+
+  buttons.forEach((button) => {
+    // set href = "#" attribute from a tag which is parent of button
+    button.parentElement.removeAttribute("href");
+    
+  });
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      Swal.fire({
+        position: 'center-center',
+        icon: 'success',
+        title: 'Đặt tour thành công',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    });
+  });
 </script>
