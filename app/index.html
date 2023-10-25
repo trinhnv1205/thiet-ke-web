@@ -1,1165 +1,679 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web du lich</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.css"
-    />
-    <link rel="stylesheet" href="../../static/css/main.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
 
-  <body>
-    <div
-      id="header1"
-      class="d-flex text-white justify-content-between font-size-14 px-5 sticky top-0"
-    >
-      <ul>
-        <li>Email: oanhvu1503@gmail.com</li>
-        <li>Sdt:09887237361</li>
-      </ul>
-      <ul class="flex-row">
-        <li><a href="dangky.html">Đăng ký</a></li>
-        <li><a href="dangnhap.html">Đăng nhập</a></li>
-      </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web du lich</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.min.css" />
+  <link rel="stylesheet" href="../../static/css/main.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div id="header1" class="d-flex text-white justify-content-between font-size-14 px-5 sticky top-0">
+    <ul>
+      <li>Email: dongatourist@gmail.com</li>
+      <li>Sdt:09887237361</li>
+    </ul>
+    <ul class="flex-row">
+      <li><a href="dangky.html">Đăng ký</a></li>
+      <li><a href="dangnhap.html">Đăng nhập</a></li>
+    </ul>
+  </div>
+
+  <div id="header2" class="d-flex text-white justify-content-between sticky top-0 py-2">
+    <div class="d-flex align-items-center">
+      <img id="logo" class="border-0 mx-5"
+        src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/design/discover/mascot-logo-design/mascot-logo-design_fb-img_1200x800.jpg"
+        alt="" />
+      <span class="font-size-18">ĐÔNG Á TOURIST</span>
     </div>
 
-    <div
-      id="header2"
-      class="d-flex text-white justify-content-between sticky top-0 py-2"
-    >
-      <div class="d-flex align-items-center">
-        <img
-          id="logo"
-          class="border-0 mx-5"
-          src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/design/discover/mascot-logo-design/mascot-logo-design_fb-img_1200x800.jpg"
-          alt=""
-        />
-        <span class="font-size-18">ĐÔNG Á TOURIST</span>
+    <div class="d-flex flex-column">
+      <ul class="d-flex justify-content-end margin-right-15 padding-5">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="mienbac.html">Miền Bắc</a></li>
+        <li><a href="miennam.html">Miền Nam</a></li>
+        <li><a href="mientrung.html">Miền Trung</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="slider-container">
+    <div class="slide fade">
+      <img class="slide-image" src="../static/img/silde7.jpg" />
+      <div class="slide-content">
+        <h3 class="slide-title">Quần thể du lịch sinh thái Tràng An</h3>
       </div>
+      <div class="slide-number-container">
+        <p class="slider-number">01</p>
+        <hr />
+        <p class="slider-number">05</p>
+      </div>
+    </div>
 
-      <div class="d-flex flex-column">
-        <ul class="d-flex justify-content-end margin-right-15 padding-5">
-          <li><a href="index.html">Trang chủ</a></li>
-          <li><a href="mienbac.html">Miền Bắc</a></li>
-          <li><a href="miennam.html">Miền Nam</a></li>
-          <li><a href="mientrung.html">Miền Trung</a></li>
+    <div class="slide fade">
+      <img class="slide-image" src="../static/img/silde5.png" />
+      <div class="slide-content">
+        <h3 class="slide-title">
+          Lên Hà Giang ngắm hoa Tam Giác Mạch mùa thu
+        </h3>
+      </div>
+      <div class="slide-number-container">
+        <p class="slider-number">02</p>
+        <hr />
+        <p class="slider-number">05</p>
+      </div>
+    </div>
+
+    <div class="slide fade">
+      <img class="slide-image" src="../static/img/silde9.jpg" />
+      <div class="slide-content">
+        <h3 class="slide-title">Phố Cổ Hoa Lưu Về Đêm</h3>
+      </div>
+      <div class="slide-number-container">
+        <p class="slider-number">03</p>
+        <hr />
+        <p class="slider-number">05</p>
+      </div>
+    </div>
+
+    <div class="slide fade">
+      <img class="slide-image" src="../static/img/silde12.jpg" />
+      <div class="slide-content">
+        <h3 class="slide-title">Thành phố trong sương Đà Lạt</h3>
+      </div>
+      <div class="slide-number-container">
+        <p class="slider-number">04</p>
+        <hr />
+        <p class="slider-number">05</p>
+      </div>
+    </div>
+
+    <div class="slide fade">
+      <img class="slide-image" src="../static/img/silde13.jpg" />
+      <div class="slide-content">
+        <h3 class="slide-title">
+          Hồ Hoàn Kiếm được ví như trái tim của thủ đô
+        </h3>
+
+        <!-- <a href="" class="slide-btn">
+            button <ion-icon name="arrow-forward-circle"></ion-icon>
+          </a> -->
+      </div>
+      <div class="slide-number-container">
+        <p class="slider-number">05</p>
+        <hr />
+        <p class="slider-number">05</p>
+      </div>
+    </div>
+    <!-- Next and previous buttons -->
+    <div class="slider-nav">
+      <a class="slider-nav-btn" onclick="plusSlides(-1)">
+        <ion-icon name="caret-back-outline"></ion-icon>
+      </a>
+      <a class="slider-nav-btn" onclick="plusSlides(1)">
+        <ion-icon name="caret-forward-outline"></ion-icon>
+      </a>
+    </div>
+
+    <!-- The dots/circles -->
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+  </div>
+
+  <div style="margin-top: 30rem"></div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <div class="d-flex flex-column">
+    <div class="width-100 flex justify-content-end gap-1 pr-3">
+      <input type="text" class="p-3 rounded-2xl width-25" placeholder="Tìm kiếm" />
+      <button class="btn bg-blue-400 p-3 rounded-2xl text-white">
+        Tìm kiếm
+      </button>
+    </div>
+    <div class="width-100">
+      <h1 class="text-center padding-15 text-3xl">Du lịch mùa thu</h1>
+      <div class="">
+        <ul class="d-flex flex-row flex-wrap">
+          <li class="p-10 width-50 d-flex flex-row rounded">
+            <img class="rounded-2xl" class="rounded-2xl" style="width: 400px; height: 300px"
+              src="../static/img/langbac11.jpeg" alt="" />
+            <div class="padding-10">
+              <div class="padding-bottom-10">
+                Tour du lịch Hà Nội (Lăng Bác - Hoàng thành Thăng Long - Văn
+                Miếu Quốc Tử Giám)
+              </div>
+              <hr />
+              <div class="padding-top-5">
+                <span class="font-bold">Thời gian</span> : Trong ngày
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Phương tiện</span> : Xe du lịch
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Giá</span> : 3.500k
+              </div>
+              <div>
+                <a style="padding: 0" href="chitiet/tour-du-lịch-hà-nội-lăng-bác.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5">
+                    Chi tiết
+                  </button>
+                </a>
+                <a style="padding: 0" href="chitiet/tour-du-lịch-hà-nội-lăng-bác.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5">
+                    Đặt tour
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="p-10 width-50 d-flex flex-row rounded">
+            <img class="rounded-2xl" class="rounded-2xl" style="width: 400px; height: 300px"
+              src="../static/img/ninhbinh1.jpeg" alt="" />
+            <div class="padding-10">
+              <div class="padding-bottom-10">
+                Tour du lich Ninh Bình (Bái Đính - Tràng An - Thung Nham - Phố
+                cổ Hoa Lư )
+              </div>
+              <hr />
+              <div class="padding-top-5">
+                <span class="font-bold">Thời gian</span> : Trong ngày
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Phương tiện</span> : Xe du lịch
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Giá</span> : 4.000k
+              </div>
+              <div>
+                <a style="padding: 0" href="chitiet/tour-du-lich-ninh-bình-bái-đính.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5">
+                    Chi tiết
+                  </button>
+                </a>
+                <a style="padding: 0" href="chitiet/tour-du-lich-ninh-bình-bái-đính.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5">
+                    Đặt tour
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="p-10 width-50 d-flex flex-row rounded">
+            <img class="rounded-2xl" class="rounded-2xl" style="width: 400px; height: 300px"
+              src="../../static/img/langgson.jpg" alt="" />
+            <div class="padding-10">
+              <div class="padding-bottom-10">
+                Tour du lịch Lạng Sơn - Mẫu Sơn - Bình Liêu - Móng Cái - Biển
+                Trà Cổ - Hạ Long - Yên Tử - Hà Nội
+              </div>
+              <hr />
+              <div class="padding-top-5">
+                <span class="font-bold">Thời gian</span> : 4 ngày 3 đêm
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Phương tiện</span> : Xe du lịch
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Giá</span> : 8.500k
+              </div>
+              <div>
+                <a style="padding: 0" href="./chitiet/tour-du-lịch-lạng-sơn-mẫu-sơn.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5">
+                    Chi tiết
+                  </button>
+                </a>
+                <a style="padding: 0" href="./chitiet/tour-du-lịch-lạng-sơn-mẫu-sơn.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5">
+                    Đặt tour
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="p-10 width-50 d-flex flex-row rounded">
+            <img class="rounded-2xl" class="rounded-2xl" style="width: 400px; height: 300px"
+              src="https://cdn.tgdd.vn/Files/2021/07/09/1366829/diem-danh-13-dia-diem-du-lich-tai-yen-bai-ban-nhat-dinh-phai-tham-quan-202202141345041502.jpg"
+              alt="" />
+            <div class="padding-10">
+              <div class="padding-bottom-10">
+                YÊN BÁI - HÀ GIANG (Du lịch Yên Bái - Hà Giang - Đồng Văn -
+                Mèo Vạc - Lũng Cú - Bắc Mê - Hà Giang - Yên Bái)
+              </div>
+              <hr />
+              <div class="padding-top-5">
+                <span class="font-bold">Thời gian</span> : 4 ngày 3 đêm
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Phương tiện</span> : Xe du lịch
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Giá</span> : 9.000k
+              </div>
+              <div>
+                <a style="padding: 0" href="./chitiet/lũng-cú-bắc-mê-hà-giang-yên-bái.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5">
+                    Chi tiết
+                  </button>
+                </a>
+                <a style="padding: 0" href="./chitiet/lũng-cú-bắc-mê-hà-giang-yên-bái.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5">
+                    Đặt tour
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <h1 class="text-center padding-15 text-3xl">
+        Hành Trình Khám Phá Kì Quan
+      </h1>
+      <div>
+        <ul class="d-flex flex-row flex-wrap">
+          <li class="p-10 width-50 d-flex flex-row rounded">
+            <img class="rounded-2xl" class="rounded-2xl" style="width: 400px; height: 300px"
+              src="../static/img/pacbo.jpeg" alt="" />
+            <div class="padding-10">
+              <div class="padding-bottom-10">
+                Du Lịch tham quan Hà Nội - Đông Bắc (Cao Bằng - Pác Bó - Thác
+                Bản Giốc)
+              </div>
+              <hr />
+              <div class="padding-top-5">
+                <span class="font-bold">Thời gian</span> : 4 ngày 3 đêm
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Phương tiện</span> : Xe du lịch
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Địa điểm xuất phát</span> : Hà Nội
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Giá</span> : 7.500k
+              </div>
+              <div>
+                <a style="padding: 0" href="chitiet/du-lịch-tham-quan-hà-nội-đông-bắc-cao-bằng.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5">
+                    Chi tiết
+                  </button>
+                </a>
+                <a style="padding: 0" href="chitiet/du-lịch-tham-quan-hà-nội-đông-bắc-cao-bằng.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5">
+                    Đặt tour
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="p-10 width-50 d-flex flex-row rounded">
+            <img class="rounded-2xl" class="rounded-2xl" style="width: 400px; height: 300px"
+              src="../static/img/datlat2.jpg" alt="" />
+            <div class="padding-10">
+              <div class="padding-bottom-10">
+                Tour du lich Đà Lạt - Nha Trang (Hành trình Hoa và Biển )
+              </div>
+              <hr />
+              <div class="padding-top-5">
+                <span class="font-bold">Thời gian</span> : 3 ngày 2 đêm
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Phương tiện</span> : Xe du lịch
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Địa điểm xuất phát</span> : Hà Nội
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Giá</span> : 4.500k
+              </div>
+              <div>
+                <a style="padding: 0" href="chitiet/tour-du-lich-đà-lạt-nha-trang-hành-trình-hoa-và-biển.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5">
+                    Chi tiết
+                  </button>
+                </a>
+                <a style="padding: 0" href="chitiet/tour-du-lich-đà-lạt-nha-trang-hành-trình-hoa-và-biển.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5">
+                    Đặt tour
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="p-10 width-50 d-flex flex-row rounded">
+            <img class="rounded-2xl" class="rounded-2xl" style="width: 400px; height: 300px"
+              src="https://vcdn1-dulich.vnecdn.net/2022/06/01/CauVangDaNang-1654082224-7229-1654082320.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=MeVMb72UZA27ivcyB3s7Kg"
+              alt="" />
+            <div class="padding-10">
+              <div class="padding-bottom-10">
+                Du lịch Đà Nẵng
+              </div>
+              <hr />
+              <div class="padding-top-5">
+                <span class="font-bold">Thời gian</span> : 2 ngày 1 đêm
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Phương tiện</span> : Xe du lịch
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Giá</span> : 3.500k
+              </div>
+              <div>
+                <a style="padding: 0" href="chitiet/du-lịch-đà-nẵng.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5">
+                    Chi tiết
+                  </button>
+                </a>
+                <a style="padding: 0" href="chitiet/du-lịch-đà-nẵng.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5">
+                    Đặt tour
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="p-10 width-50 d-flex flex-row rounded">
+            <img class="rounded-2xl" class="rounded-2xl" style="width: 400px; height: 300px"
+              src="https://vcdn1-dulich.vnecdn.net/2022/04/02/NhaTrangKhanhHoa-1648888103-7869-1648888250.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=DaIvzu7tHOfhuT0SzvZlww"
+              alt="" />
+            <div class="padding-10">
+              <div class="padding-bottom-10">Du Lịch Nha Trang - Đà Lạt</div>
+              <hr />
+              <div class="padding-top-5">
+                <span class="font-bold">Thời gian</span> : 4 ngày 2 đêm
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Phương tiện</span> : Xe du lịch
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Địa điểm xuất phát</span> : Hà Nội
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Giá</span> : 1.500k
+              </div>
+              <div>
+                <a style="padding: 0" href="./chitiet/du-lịch-nha-trang-đà-lạt.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5">
+                    Chi tiết
+                  </button>
+                </a>
+                <a style="padding: 0" href="./chitiet/du-lịch-nha-trang-đà-lạt.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5">
+                    Đặt tour
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="p-10 width-50 d-flex flex-row rounded">
+            <img class="rounded-2xl" class="rounded-2xl" style="width: 400px; height: 300px"
+              src="https://phuquocxanh.com/vi/wp-content/uploads/2016/05/bai-dai-Phu-Quoc-4.jpg" alt="" />
+            <div class="padding-10">
+              <div class="padding-bottom-10">
+                PHÚ QUỐC (Tham quan đảo bằng cano, lặng ngăm sanho)
+              </div>
+              <hr />
+              <div class="padding-top-5">
+                <span class="font-bold">Thời gian</span> : 4 ngày 2 đêm
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Phương tiện</span> : Xe du lịch
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Địa điểm xuất phát</span> : Hà Nội
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Giá</span> : 1.500k
+              </div>
+              <div>
+                <a style="padding: 0" href="./chitiet/phú-quốc-tham-quan.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5">
+                    Chi tiết
+                  </button>
+                </a>
+                <a style="padding: 0" href="./chitiet/phú-quốc-tham-quan.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5">
+                    Đặt tour
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="p-10 width-50 d-flex flex-row rounded">
+            <img class="rounded-2xl" class="rounded-2xl" style="width: 400px; height: 300px"
+              src="https://file1.dangcongsan.vn/data/0/images/2022/06/11/oanhvh/f01d3683bc1f7c41250e.jpg" alt="" />
+            <div class="padding-10">
+              <div class="padding-bottom-10">
+                VÙNG ĐẤT KINH KỲ - CỐ ĐÔ HUẾ
+              </div>
+              <hr />
+              <div class="padding-top-5">
+                <span class="font-bold">Thời gian</span> : 4 ngày 2 đêm
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Phương tiện</span> : Xe du lịch
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Địa điểm xuất phát</span> : Hà Nội
+              </div>
+              <div class="padding-top-5">
+                <span class="font-bold">Giá</span> : 1.500k
+              </div>
+              <div>
+                <a style="padding: 0" href="./chitiet/vùng-đất-kinh-kỳ-cố-đô-huế.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5">
+                    Chi tiết
+                  </button>
+                </a>
+                <a style="padding: 0" href="./chitiet/vùng-đất-kinh-kỳ-cố-đô-huế.html">
+                  <button
+                    class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5">
+                    Đặt tour
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
-    <div class="slider-container">
-      <div class="slide fade">
-        <img class="slide-image" src="../static/img/silde7.jpg" />
-        <div class="slide-content">
-          <h3 class="slide-title">Quần thể du lịch sinh thái Tràng An</h3>
-        </div>
-        <div class="slide-number-container">
-          <p class="slider-number">01</p>
-          <hr />
-          <p class="slider-number">05</p>
-        </div>
-      </div>
+  </div>
+  <h1 class="text-center text-2xl text-gray-600 padding-15 &#10084;">
+    CÁC ĐIỂM ĐẾN YÊU THÍCH
+    <p color="red">&hearts;</p>
+    <p></p>
+  </h1>
 
-      <div class="slide fade">
-        <img class="slide-image" src="../static/img/silde5.png" />
-        <div class="slide-content">
-          <h3 class="slide-title">
-            Lên Hà Giang ngắm hoa Tam Giác Mạch mùa thu
-          </h3>
-        </div>
-        <div class="slide-number-container">
-          <p class="slider-number">02</p>
-          <hr />
-          <p class="slider-number">05</p>
-        </div>
-      </div>
-
-      <div class="slide fade">
-        <img class="slide-image" src="../static/img/silde9.jpg" />
-        <div class="slide-content">
-          <h3 class="slide-title">Phố Cổ Hoa Lưu Về Đêm</h3>
-        </div>
-        <div class="slide-number-container">
-          <p class="slider-number">03</p>
-          <hr />
-          <p class="slider-number">05</p>
-        </div>
-      </div>
-
-      <div class="slide fade">
-        <img class="slide-image" src="../static/img/silde12.jpg" />
-        <div class="slide-content">
-          <h3 class="slide-title">Thành phố trong sương Đà Lạt</h3>
-        </div>
-        <div class="slide-number-container">
-          <p class="slider-number">04</p>
-          <hr />
-          <p class="slider-number">05</p>
-        </div>
-      </div>
-
-      <div class="slide fade">
-        <img class="slide-image" src="../static/img/silde13.jpg" />
-        <div class="slide-content">
-          <h3 class="slide-title">
-            Hồ Hoàn Kiếm được ví như trái tim của thủ đô
-          </h3>
-
-          <!-- <a href="" class="slide-btn">
-            button <ion-icon name="arrow-forward-circle"></ion-icon>
-          </a> -->
-        </div>
-        <div class="slide-number-container">
-          <p class="slider-number">05</p>
-          <hr />
-          <p class="slider-number">05</p>
-        </div>
-      </div>
-      <!-- Next and previous buttons -->
-      <div class="slider-nav">
-        <a class="slider-nav-btn" onclick="plusSlides(-1)">
-          <ion-icon name="caret-back-outline"></ion-icon>
-        </a>
-        <a class="slider-nav-btn" onclick="plusSlides(1)">
-          <ion-icon name="caret-forward-outline"></ion-icon>
-        </a>
-      </div>
-
-      <!-- The dots/circles -->
-      <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-      </div>
-    </div>
-
-    <div style="margin-top: 30rem"></div>
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Roboto;
-        text-decoration: none;
-      }
-
-      .slider-container {
-        width: 100%;
-        top: 0;
-        z-index: -9;
-        position: absolute;
-      }
-
-      .slide {
-        width: 100%;
-        display: none;
-      }
-
-      .slide-image {
-        width: 100%;
-        height: 65vh;
-        object-fit: cover;
-        filter: brightness(0.6);
-      }
-
-      .slide-content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 5;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        text-align: center;
-        padding: 1rem;
-      }
-
-      .slide-title {
-        width: 100%;
-        max-width: 50rem;
-        color: white;
-        font-size: 2rem;
-        font-weight: 500;
-        text-transform: capitalize;
-      }
-
-      .slide-desc {
-        width: 100%;
-        max-width: 50rem;
-        color: lightgray;
-        font-size: 1rem;
-        font-weight: 300;
-      }
-
-      .slide-btn {
-        color: black;
-        background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        font-size: 1.2rem;
-        font-weight: 500;
-        margin-top: 1rem;
-        border-radius: 0.5rem;
-        padding: 0.5rem 1rem;
-        text-transform: capitalize;
-        transition: ease 0.3s;
-      }
-
-      .slide-btn:hover {
-        gap: 1rem;
-      }
-
-      .slide-number-container {
-        position: absolute;
-        bottom: 1rem;
-        left: 1rem;
-        z-index: 5;
-        font-size: 1.5rem;
-        display: flex;
-        gap: 0.5rem;
-        align-items: center;
-        color: rgba(211, 211, 211, 0.788);
-        letter-spacing: 0.2rem;
-      }
-
-      .slide-number-container hr {
-        width: 3rem;
-        transform: rotate(130deg);
-        border-color: rgba(211, 211, 211, 0.788);
-      }
-
-      .slider-nav {
-        position: absolute;
-        bottom: 1rem;
-        right: 1rem;
-        z-index: 5;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-      }
-
-      .slider-nav-btn {
-        cursor: pointer;
-        background-color: rgba(211, 211, 211, 0.226);
-        color: white;
-        font-size: 1.5rem;
-        padding: 0.5rem;
-        border-radius: 0.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: ease 0.1s;
-      }
-
-      .slider-nav-btn:hover {
-        background-color: white;
-        color: black;
-      }
-
-      .dot-container {
-        position: absolute;
-        bottom: 1rem;
-        left: 0;
-        z-index: 4;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-      }
-
-      .dot {
-        cursor: pointer;
-        height: 1rem;
-        width: 1rem;
-        background-color: rgba(211, 211, 211, 0.226);
-        border-radius: 50%;
-        display: inline-block;
-        transition: ease 0.1s;
-      }
-
-      .active,
-      .dot:hover {
-        background-color: white;
-      }
-
-      .fade {
-        animation-name: fade;
-        animation-duration: 0.5s;
-      }
-
-      @keyframes fade {
-        from {
-          opacity: 0.8;
-        }
-
-        to {
-          opacity: 1;
-        }
-      }
-    </style>
-
-    <script>
-      let slideIndex = 1;
-      const slides = document.getElementsByClassName("slide");
-      const dots = document.getElementsByClassName("dot");
-
-      // Function to show a specific slide
-      function showSlides(n) {
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-
-        // Hide all slides
-        for (let i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-
-        // Remove the "active" class from all dots
-        for (let i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-
-        // Display the current slide and mark its corresponding dot as active
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-
-      // Function to advance to the next slide
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      // Function to navigate to a specific slide
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      // Automatically advance to the next slide every 3 seconds (3000 milliseconds)
-      setInterval(function () {
-        plusSlides(1);
-      }, 5000);
-
-      // Initialize the slider
-      showSlides(slideIndex);
-    </script>
-
-    <div class="d-flex flex-column">
-      <div class="width-100 flex justify-content-end gap-1 pr-3">
-        <input
-          type="text"
-          class="p-3 rounded-2xl width-25"
-          placeholder="Tìm kiếm"
-        />
-        <button class="btn bg-blue-400 p-3 rounded-2xl text-white">
-          Tìm kiếm
-        </button>
-      </div>
-      <div class="width-100">
-        <h1 class="text-center padding-15 text-3xl">Du lịch mùa thu</h1>
-        <div class="">
-          <ul class="d-flex flex-row flex-wrap">
-            <li class="p-10 width-50 d-flex flex-row rounded">
-              <img
-                class="rounded-2xl"
-                class="rounded-2xl"
-                style="width: 400px; height: 300px"
-                src="../static/img/langbac11.jpeg"
-                alt=""
-              />
-              <div class="padding-10">
-                <div class="padding-bottom-10">
-                  Tour du lịch Hà Nội (Lăng Bác - Hoàng thành Thăng Long - Văn
-                  Miếu Quốc Tử Giám)
-                </div>
-                <hr />
-                <div class="padding-top-5">
-                  <span class="font-bold">Thời gian</span> : Trong ngày
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Phương tiện</span> : Xe du lịch
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Giá</span> : 3.500k
-                </div>
-                <div>
-                  <a
-                    style="padding: 0"
-                    href="chitiet/tour-du-lịch-hà-nội-lăng-bác.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
-                    >
-                      Chi tiết
-                    </button>
-                  </a>
-                  <a
-                    style="padding: 0"
-                    href="chitiet/tour-du-lịch-hà-nội-lăng-bác.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
-                    >
-                      Đặt tour
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="p-10 width-50 d-flex flex-row rounded">
-              <img
-                class="rounded-2xl"
-                class="rounded-2xl"
-                style="width: 400px; height: 300px"
-                src="../static/img/ninhbinh1.jpeg"
-                alt=""
-              />
-              <div class="padding-10">
-                <div class="padding-bottom-10">
-                  Tour du lich Ninh Bình (Bái Đính - Tràng An - Thung Nham - Phố
-                  cổ Hoa Lư )
-                </div>
-                <hr />
-                <div class="padding-top-5">
-                  <span class="font-bold">Thời gian</span> : Trong ngày
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Phương tiện</span> : Xe du lịch
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Giá</span> : 4.000k
-                </div>
-                <div>
-                  <a
-                    style="padding: 0"
-                    href="chitiet/tour-du-lich-ninh-bình-bái-đính.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
-                    >
-                      Chi tiết
-                    </button>
-                  </a>
-                  <a
-                    style="padding: 0"
-                    href="chitiet/tour-du-lich-ninh-bình-bái-đính.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
-                    >
-                      Đặt tour
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="p-10 width-50 d-flex flex-row rounded">
-              <img
-                class="rounded-2xl"
-                class="rounded-2xl"
-                style="width: 400px; height: 300px"
-                src="../../static/img/langgson.jpg"
-                alt=""
-              />
-              <div class="padding-10">
-                <div class="padding-bottom-10">
-                  Tour du lịch Lạng Sơn - Mẫu Sơn - Bình Liêu - Móng Cái - Biển
-                  Trà Cổ - Hạ Long - Yên Tử - Hà Nội
-                </div>
-                <hr />
-                <div class="padding-top-5">
-                  <span class="font-bold">Thời gian</span> : 4 ngày 3 đêm
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Phương tiện</span> : Xe du lịch
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Giá</span> : 8.500k
-                </div>
-                <div>
-                  <a
-                    style="padding: 0"
-                    href="./chitiet/tour-du-lịch-lạng-sơn-mẫu-sơn.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
-                    >
-                      Chi tiết
-                    </button>
-                  </a>
-                  <a
-                    style="padding: 0"
-                    href="./chitiet/tour-du-lịch-lạng-sơn-mẫu-sơn.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
-                    >
-                      Đặt tour
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="p-10 width-50 d-flex flex-row rounded">
-              <img
-                class="rounded-2xl"
-                class="rounded-2xl"
-                style="width: 400px; height: 300px"
-                src="https://cdn.tgdd.vn/Files/2021/07/09/1366829/diem-danh-13-dia-diem-du-lich-tai-yen-bai-ban-nhat-dinh-phai-tham-quan-202202141345041502.jpg"
-                alt=""
-              />
-              <div class="padding-10">
-                <div class="padding-bottom-10">
-                  YÊN BÁI - HÀ GIANG (Du lịch Yên Bái - Hà Giang - Đồng Văn -
-                  Mèo Vạc - Lũng Cú - Bắc Mê - Hà Giang - Yên Bái)
-                </div>
-                <hr />
-                <div class="padding-top-5">
-                  <span class="font-bold">Thời gian</span> : 4 ngày 3 đêm
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Phương tiện</span> : Xe du lịch
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Giá</span> : 9.000k
-                </div>
-                <div>
-                  <a
-                    style="padding: 0"
-                    href="./chitiet/lũng-cú-bắc-mê-hà-giang-yên-bái.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
-                    >
-                      Chi tiết
-                    </button>
-                  </a>
-                  <a
-                    style="padding: 0"
-                    href="./chitiet/lũng-cú-bắc-mê-hà-giang-yên-bái.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
-                    >
-                      Đặt tour
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <hr />
-        <h1 class="text-center padding-15 text-3xl">
-          Hành Trình Khám Phá Kì Quan
-        </h1>
+  <div>
+    <div class="grid grid-cols-4 gap-12 justify-content-center" style="margin: 2rem 4rem">
+      <div>
         <div>
-          <ul class="d-flex flex-row flex-wrap">
-            <li class="p-10 width-50 d-flex flex-row rounded">
-              <img
-                class="rounded-2xl"
-                class="rounded-2xl"
-                style="width: 400px; height: 300px"
-                src="../static/img/pacbo.jpeg"
-                alt=""
-              />
-              <div class="padding-10">
-                <div class="padding-bottom-10">
-                  Du Lịch tham quan Hà Nội - Đông Bắc (Cao Bằng - Pác Bó - Thác
-                  Bản Giốc)
-                </div>
-                <hr />
-                <div class="padding-top-5">
-                  <span class="font-bold">Thời gian</span> : 4 ngày 3 đêm
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Phương tiện</span> : Xe du lịch
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Địa điểm xuất phát</span> : Hà Nội
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Giá</span> : 7.500k
-                </div>
-                <div>
-                  <a
-                    style="padding: 0"
-                    href="chitiet/du-lịch-tham-quan-hà-nội-đông-bắc-cao-bằng.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
-                    >
-                      Chi tiết
-                    </button>
-                  </a>
-                  <a
-                    style="padding: 0"
-                    href="chitiet/du-lịch-tham-quan-hà-nội-đông-bắc-cao-bằng.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
-                    >
-                      Đặt tour
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="p-10 width-50 d-flex flex-row rounded">
-              <img
-                class="rounded-2xl"
-                class="rounded-2xl"
-                style="width: 400px; height: 300px"
-                src="../static/img/datlat2.jpg"
-                alt=""
-              />
-              <div class="padding-10">
-                <div class="padding-bottom-10">
-                  Tour du lich Đà Lạt - Nha Trang (Hành trình Hoa và Biển )
-                </div>
-                <hr />
-                <div class="padding-top-5">
-                  <span class="font-bold">Thời gian</span> : 3 ngày 2 đêm
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Phương tiện</span> : Xe du lịch
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Địa điểm xuất phát</span> : Hà Nội
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Giá</span> : 4.500k
-                </div>
-                <div>
-                  <a
-                    style="padding: 0"
-                    href="chitiet/tour-du-lich-đà-lạt-nha-trang-hành-trình-hoa-và-biển.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
-                    >
-                      Chi tiết
-                    </button>
-                  </a>
-                  <a
-                    style="padding: 0"
-                    href="chitiet/tour-du-lich-đà-lạt-nha-trang-hành-trình-hoa-và-biển.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
-                    >
-                      Đặt tour
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="p-10 width-50 d-flex flex-row rounded">
-              <img
-                class="rounded-2xl"
-                class="rounded-2xl"
-                style="width: 400px; height: 300px"
-                src="../static/img/dentran.jpg"
-                alt=""
-              />
-              <div class="padding-10">
-                <div class="padding-bottom-10">
-                  Du xuân đầu năm (Đền Trần- Nam Định, Tam Chúc - Hà Nam)
-                </div>
-                <hr />
-                <div class="padding-top-5">
-                  <span class="font-bold">Thời gian</span> : 2 ngày 1 đêm
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Phương tiện</span> : Xe du lịch
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Giá</span> : 3.500k
-                </div>
-                <div>
-                  <a style="padding: 0" href="chitiet.html">
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
-                    >
-                      Chi tiết
-                    </button>
-                  </a>
-                  <a style="padding: 0" href="chitiet.html">
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
-                    >
-                      Đặt tour
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="p-10 width-50 d-flex flex-row rounded">
-              <img
-                class="rounded-2xl"
-                class="rounded-2xl"
-                style="width: 400px; height: 300px"
-                src="https://vcdn1-dulich.vnecdn.net/2022/04/02/NhaTrangKhanhHoa-1648888103-7869-1648888250.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=DaIvzu7tHOfhuT0SzvZlww"
-                alt=""
-              />
-              <div class="padding-10">
-                <div class="padding-bottom-10">Du Lịch Nha Trang - Đà Lạt</div>
-                <hr />
-                <div class="padding-top-5">
-                  <span class="font-bold">Thời gian</span> : 4 ngày 2 đêm
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Phương tiện</span> : Xe du lịch
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Địa điểm xuất phát</span> : Hà Nội
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Giá</span> : 1.500k
-                </div>
-                <div>
-                  <a
-                    style="padding: 0"
-                    href="./chitiet/du-lịch-nha-trang-đà-lạt.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
-                    >
-                      Chi tiết
-                    </button>
-                  </a>
-                  <a
-                    style="padding: 0"
-                    href="./chitiet/du-lịch-nha-trang-đà-lạt.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
-                    >
-                      Đặt tour
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="p-10 width-50 d-flex flex-row rounded">
-              <img
-                class="rounded-2xl"
-                class="rounded-2xl"
-                style="width: 400px; height: 300px"
-                src="https://phuquocxanh.com/vi/wp-content/uploads/2016/05/bai-dai-Phu-Quoc-4.jpg"
-                alt=""
-              />
-              <div class="padding-10">
-                <div class="padding-bottom-10">
-                  PHÚ QUỐC (Tham quan đảo bằng cano, lặng ngăm sanho)
-                </div>
-                <hr />
-                <div class="padding-top-5">
-                  <span class="font-bold">Thời gian</span> : 4 ngày 2 đêm
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Phương tiện</span> : Xe du lịch
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Địa điểm xuất phát</span> : Hà Nội
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Giá</span> : 1.500k
-                </div>
-                <div>
-                  <a
-                    style="padding: 0"
-                    href="./chitiet/phú-quốc-tham-quan.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
-                    >
-                      Chi tiết
-                    </button>
-                  </a>
-                  <a
-                    style="padding: 0"
-                    href="./chitiet/phú-quốc-tham-quan.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
-                    >
-                      Đặt tour
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="p-10 width-50 d-flex flex-row rounded">
-              <img
-                class="rounded-2xl"
-                class="rounded-2xl"
-                style="width: 400px; height: 300px"
-                src="https://file1.dangcongsan.vn/data/0/images/2022/06/11/oanhvh/f01d3683bc1f7c41250e.jpg"
-                alt=""
-              />
-              <div class="padding-10">
-                <div class="padding-bottom-10">
-                  VÙNG ĐẤT KINH KỲ - CỐ ĐÔ HUẾ
-                </div>
-                <hr />
-                <div class="padding-top-5">
-                  <span class="font-bold">Thời gian</span> : 4 ngày 2 đêm
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Phương tiện</span> : Xe du lịch
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Địa điểm xuất phát</span> : Hà Nội
-                </div>
-                <div class="padding-top-5">
-                  <span class="font-bold">Giá</span> : 1.500k
-                </div>
-                <div>
-                  <a
-                    style="padding: 0"
-                    href="./chitiet/vùng-đất-kinh-kỳ-cố-đô-huế.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-info text-white birder-radius-5"
-                    >
-                      Chi tiết
-                    </button>
-                  </a>
-                  <a
-                    style="padding: 0"
-                    href="./chitiet/vùng-đất-kinh-kỳ-cố-đô-huế.html"
-                  >
-                    <button
-                      class="padding-right-15 padding-left-15 padding-top-5 padding-bottom-5 border-0 bg-danger text-white birder-radius-5"
-                    >
-                      Đặt tour
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
+          <img style="height: 225px" class="rounded-md" src="../static/img/bavihn.jpeg" alt="" />
+        </div>
+        <div class="grid grid-rows-2 gap-2">
+          <span class="text-xl text-gray-600 mt-2">Hà Nội</span>
+          <span class="text-sm text-gray-500">Đã có 9,000 lượt khách</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img style="height: 225px" class="rounded-md" src="../static/img/halong.jpg" alt="" />
+        </div>
+        <div class="grid grid-rows-2 gap-2">
+          <span class="text-xl text-gray-600 mt-2">Hạ Long</span>
+          <span class="text-sm text-gray-500">Đã có 10,500 lượt thích</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img style="height: 225px" class="rounded-md" src="../static/img/danang.jpg" alt="" />
+        </div>
+        <div class="grid grid-rows-2 gap-2">
+          <span class="text-xl text-gray-600 mt-2">Đà Nẵng</span>
+          <span class="text-sm text-gray-500">Đã có 22,000 lượt thích</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img style="height: 225px" class="rounded-md" src="../static/img/dalat.jpg" alt="" />
+        </div>
+        <div class="grid grid-rows-2 gap-2">
+          <span class="text-xl text-gray-600 mt-2">Đà Lạt</span>
+          <span class="text-sm text-gray-500">Đã có 15,000 lượt thích</span>
         </div>
       </div>
     </div>
-    <h1 class="text-center text-2xl text-gray-600 padding-15 &#10084;">
-      CÁC ĐIỂM ĐẾN YÊU THÍCH
-      <p color="red">&hearts;</p>
-      <p></p>
-    </h1>
-
-    <div>
-      <div
-        class="grid grid-cols-4 gap-12 justify-content-center"
-        style="margin: 2rem 4rem"
-      >
+    <div class="grid grid-cols-4 gap-12 justify-content-center" style="margin: 2rem 4rem">
+      <div>
         <div>
-          <div>
-            <img
-              style="height: 225px"
-              class="rounded-md"
-              src="../static/img/bavihn.jpeg"
-              alt=""
-            />
-          </div>
-          <div class="grid grid-rows-2 gap-2">
-            <span class="text-xl text-gray-600 mt-2">Hà Nội</span>
-            <span class="text-sm text-gray-500">Đã có 9,000 lượt khách</span>
-          </div>
+          <img style="height: 225px" class="rounded-md" src="../static/img/phuquocc.jpg" alt="" />
         </div>
-        <div>
-          <div>
-            <img
-              style="height: 225px"
-              class="rounded-md"
-              src="../static/img/halong.jpg"
-              alt=""
-            />
-          </div>
-          <div class="grid grid-rows-2 gap-2">
-            <span class="text-xl text-gray-600 mt-2">Hạ Long</span>
-            <span class="text-sm text-gray-500">Đã có 10,500 lượt thích</span>
-          </div>
-        </div>
-        <div>
-          <div>
-            <img
-              style="height: 225px"
-              class="rounded-md"
-              src="../static/img/danang.jpg"
-              alt=""
-            />
-          </div>
-          <div class="grid grid-rows-2 gap-2">
-            <span class="text-xl text-gray-600 mt-2">Đà Nẵng</span>
-            <span class="text-sm text-gray-500">Đã có 22,000 lượt thích</span>
-          </div>
-        </div>
-        <div>
-          <div>
-            <img
-              style="height: 225px"
-              class="rounded-md"
-              src="../static/img/dalat.jpg"
-              alt=""
-            />
-          </div>
-          <div class="grid grid-rows-2 gap-2">
-            <span class="text-xl text-gray-600 mt-2">Đà Lạt</span>
-            <span class="text-sm text-gray-500">Đã có 15,000 lượt thích</span>
-          </div>
+        <div class="grid grid-rows-2 gap-2">
+          <span class="text-xl text-gray-600 mt-2">Phú Quốc</span>
+          <span class="text-sm text-gray-500">Đã có 8,000 lượt thích</span>
         </div>
       </div>
-      <div
-        class="grid grid-cols-4 gap-12 justify-content-center"
-        style="margin: 2rem 4rem"
-      >
+      <div>
         <div>
-          <div>
-            <img
-              style="height: 225px"
-              class="rounded-md"
-              src="../static/img/phuquocc.jpg"
-              alt=""
-            />
-          </div>
-          <div class="grid grid-rows-2 gap-2">
-            <span class="text-xl text-gray-600 mt-2">Phú Quốc</span>
-            <span class="text-sm text-gray-500">Đã có 8,000 lượt thích</span>
-          </div>
+          <img style="height: 225px" class="rounded-md" src="../static/img/ninhbinh6.jpeg" alt="" />
         </div>
-        <div>
-          <div>
-            <img
-              style="height: 225px"
-              class="rounded-md"
-              src="../static/img/ninhbinh6.jpeg"
-              alt=""
-            />
-          </div>
-          <div class="grid grid-rows-2 gap-2">
-            <span class="text-xl text-gray-600 mt-2">Ninh Bình</span>
-            <span class="text-sm text-gray-500">Đã có 12,000 lượt thích</span>
-          </div>
+        <div class="grid grid-rows-2 gap-2">
+          <span class="text-xl text-gray-600 mt-2">Ninh Bình</span>
+          <span class="text-sm text-gray-500">Đã có 12,000 lượt thích</span>
         </div>
+      </div>
+      <div>
         <div>
-          <div>
-            <img
-              style="height: 225px"
-              class="rounded-md"
-              src="../static/img/hhoian.jpeg"
-              alt=""
-            />
-          </div>
-          <div class="grid grid-rows-2 gap-2">
-            <span class="text-xl text-gray-600 mt-2">Hội An</span>
-            <span class="text-sm text-gray-500">Đã có 20,000 lượt thích</span>
-          </div>
+          <img style="height: 225px" class="rounded-md" src="../static/img/hhoian.jpeg" alt="" />
         </div>
+        <div class="grid grid-rows-2 gap-2">
+          <span class="text-xl text-gray-600 mt-2">Hội An</span>
+          <span class="text-sm text-gray-500">Đã có 20,000 lượt thích</span>
+        </div>
+      </div>
+      <div>
         <div>
-          <div>
-            <img
-              style="height: 225px"
-              class="rounded-md"
-              src="../static/img/nhatrang.jpeg"
-              alt=""
-            />
-          </div>
-          <div class="grid grid-rows-2 gap-2">
-            <span class="text-xl text-gray-600 mt-2">Nha Trang</span>
-            <span class="text-sm text-gray-500">Đã có 11,000 lượt thích</span>
-          </div>
+          <img style="height: 225px" class="rounded-md" src="../static/img/nhatrang.jpeg" alt="" />
+        </div>
+        <div class="grid grid-rows-2 gap-2">
+          <span class="text-xl text-gray-600 mt-2">Nha Trang</span>
+          <span class="text-sm text-gray-500">Đã có 11,000 lượt thích</span>
         </div>
       </div>
     </div>
-    <!-- phần footer -->
-    <h1 class="footer text-center text-gray-500 text-2xl my-12">
-      Vì sao chọn ĐÔNG Á TOURIST
-    </h1>
-    <div class="grid grid-flow-col grid-cols-3 text-center mb-12">
-      <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl"> Mạng bán tour</div>
-        <img
-          class="rounded-md"
-          style="margin: 0 auto; width: 7rem; height: 7rem"
-          src="../static/img/fooder1.jpg"
-          alt=""
-        />
-        <div class="text-gray-500 text-sm">
-          Đầu tiên tại Việt Nam, đặt tour du lịch trực tuyến.
-        </div>
-      </div>
-      <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl"> Sản Phẩm và dịch vụ</div>
-        <img
-          class="rounded-md"
-          style="margin: 0 auto; width: 7rem; height: 7rem"
-          src="../static/img/fooder2.jpg"
-          alt=""
-        />
-        <div class="text-gray-500 text-sm">Đa dạng - Chất Lượng - An Toàn</div>
-      </div>
-      <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl"> Giá cả</div>
-        <img
-          class="rounded-md"
-          style="margin: 0 auto; width: 7rem; height: 7rem"
-          src="../static/img/fooder3.jpg"
-          alt=""
-        />
-        <div class="text-gray-500 text-sm">Luôn có mức giá Tốt</div>
+  </div>
+  <!-- phần footer -->
+  <h1 class="footer text-center text-gray-500 text-2xl my-12">
+    Vì sao chọn ĐÔNG Á TOURIST
+  </h1>
+  <div class="grid grid-flow-col grid-cols-3 text-center mb-12">
+    <div class="mx-8 bg-white shadow rounded p-3">
+      <div class="text-gray-500 text-xl"> Mạng bán tour</div>
+      <img class="rounded-md" style="margin: 0 auto; width: 7rem; height: 7rem" src="../static/img/fooder1.jpg"
+        alt="" />
+      <div class="text-gray-500 text-sm">
+        Đầu tiên tại Việt Nam, đặt tour du lịch trực tuyến.
       </div>
     </div>
-    <div class="grid grid-flow-col grid-cols-3 text-center mb-12">
-      <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl"> Hỗ trợ khách hàng</div>
-        <img
-          class="rounded-md"
-          style="margin: 0 auto; width: 7rem; height: 7rem"
-          src="../static/img/fooder4.jpg"
-          alt=""
-        />
-        <div class="text-gray-500 text-sm">Hotline 24/7 - Trực tuyến</div>
-      </div>
-      <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl">Đặt tour du lịch</div>
-        <img
-          class="rounded-md"
-          style="margin: 0 auto; width: 7rem; height: 7rem"
-          src="../static/img/fooder5.jpg"
-          alt=""
-        />
-        <div class="text-gray-500 text-sm">Dễ dàng nhanh chóng và tiện lợi</div>
-      </div>
-      <div class="mx-8 bg-white shadow rounded p-3">
-        <div class="text-gray-500 text-xl">Thanh Toán</div>
-        <img
-          class="rounded-md"
-          style="margin: 0 auto; width: 7rem; height: 7rem"
-          src="../static/img/fooder6.jpg"
-          alt=""
-        />
-        <div class="text-gray-500 text-sm">An toàn - Tiện lợi - Đa dạng</div>
-      </div>
+    <div class="mx-8 bg-white shadow rounded p-3">
+      <div class="text-gray-500 text-xl"> Sản Phẩm và dịch vụ</div>
+      <img class="rounded-md" style="margin: 0 auto; width: 7rem; height: 7rem" src="../static/img/fooder2.jpg"
+        alt="" />
+      <div class="text-gray-500 text-sm">Đa dạng - Chất Lượng - An Toàn</div>
     </div>
-
-    <div class="d-flex justify-content-around bg-dark text-white">
-      <div class="d-flex flex-column padding-15">
-        <div class="font-bold">Về chúng tôi</div>
-        <div class="padding-top-5"><a href="gioithieu.html">Giới thiệu</a></div>
-        <div class="padding-top-5">Điều khoản sử dụng</div>
-        <div class="padding-top-5">Chính sách bảo mật</div>
-        <div class="padding-top-5">Quy chế hoạt động</div>
-      </div>
-      <div class="d-flex flex-column padding-15">
-        <div class="font-bold">Hỗ trợ khách hàng</div>
-        <div class="padding-top-5">Hướng dẫn đặt tour</div>
-        <div class="padding-top-5">Hướng dẫn thanh toán</div>
-        <div class="padding-top-5">Hướng dẫn đăng ký</div>
-        <div class="padding-top-5">Hướng dẫn đăng nhập</div>
-      </div>
-      <div class="d-flex flex-column padding-15">
-        <div class="font-bold">Liên hệ</div>
-        <div class="padding-top-5">Địa chỉ: 123 Lê Duẩn, Hà Nội</div>
-        <div class="padding-top-5">Email: oanhvu1503@gmail.com</div>
-        <div class="padding-top-5">Sđt: 09887237361</div>
-      </div>
+    <div class="mx-8 bg-white shadow rounded p-3">
+      <div class="text-gray-500 text-xl"> Giá cả</div>
+      <img class="rounded-md" style="margin: 0 auto; width: 7rem; height: 7rem" src="../static/img/fooder3.jpg"
+        alt="" />
+      <div class="text-gray-500 text-sm">Luôn có mức giá Tốt</div>
     </div>
-    <script>
-      var header1 = document.getElementById("header1");
-      var header2 = document.getElementById("header2");
-      var buttons = Array.from(document.querySelectorAll("button")).filter(
-        (button) => {
-          return button.innerText == "Đặt tour";
-        }
-      );
-
-      buttons.forEach((button) => {
-        // set href = "#" attribute from a tag which is parent of button
-        button.parentElement.removeAttribute("href");
-      });
-
-      buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-          Swal.fire({
-            position: "center-center",
-            icon: "success",
-            title: "Đặt tour thành công",
-            showConfirmButton: false,
-            timer: 1500,
-          });
-        });
-      });
-
-      window.addEventListener("scroll", function () {
-        header1.classList.toggle("bg-white", window.scrollY > 0);
-        header1.classList.toggle("text-white", window.scrollY == 0);
-        header2.classList.toggle("text-white", window.scrollY == 0);
-        header2.classList.toggle("bg-white", window.scrollY > 0);
-      });
-    </script>
-  </body>
-
-  <!-- create a model for đặt tour -->
-  <!-- Open the modal using ID.showModal() method -->
-  <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
-  <dialog id="my_modal_1" class="modal">
-    <div class="modal-box p-5 rounded-2xl">
-      <h3 class="font-bold text-lg">Đã đặt tour thành công</h3>
-      <p class="py-4">Cảm ơn bạn đã đặt tour của chúng tôi</p>
-      <div class="modal-action">
-        <form method="dialog">
-          <!-- if there is a button in form, it will close the modal -->
-          <button class="btn bg-blue-400 px-6 py-2 rounded text-white">
-            Close
-          </button>
-        </form>
-      </div>
+  </div>
+  <div class="grid grid-flow-col grid-cols-3 text-center mb-12">
+    <div class="mx-8 bg-white shadow rounded p-3">
+      <div class="text-gray-500 text-xl"> Hỗ trợ khách hàng</div>
+      <img class="rounded-md" style="margin: 0 auto; width: 7rem; height: 7rem" src="../static/img/fooder4.jpg"
+        alt="" />
+      <div class="text-gray-500 text-sm">Hotline 24/7 - Trực tuyến</div>
     </div>
-  </dialog>
+    <div class="mx-8 bg-white shadow rounded p-3">
+      <div class="text-gray-500 text-xl">Đặt tour du lịch</div>
+      <img class="rounded-md" style="margin: 0 auto; width: 7rem; height: 7rem" src="../static/img/fooder5.jpg"
+        alt="" />
+      <div class="text-gray-500 text-sm">Dễ dàng nhanh chóng và tiện lợi</div>
+    </div>
+    <div class="mx-8 bg-white shadow rounded p-3">
+      <div class="text-gray-500 text-xl">Thanh Toán</div>
+      <img class="rounded-md" style="margin: 0 auto; width: 7rem; height: 7rem" src="../static/img/fooder6.jpg"
+        alt="" />
+      <div class="text-gray-500 text-sm">An toàn - Tiện lợi - Đa dạng</div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-around bg-dark text-white">
+    <div class="d-flex flex-column padding-15">
+      <div class="font-bold">Về chúng tôi</div>
+      <div class="padding-top-5"><a href="gioithieu.html">Giới thiệu thành viên</a></div>
+      <div class="padding-top-5">Điều khoản sử dụng</div>
+      <div class="padding-top-5">Chính sách bảo mật</div>
+      <div class="padding-top-5">Quy chế hoạt động</div>
+    </div>
+    <div class="d-flex flex-column padding-15">
+      <div class="font-bold">Hỗ trợ khách hàng</div>
+      <div class="padding-top-5">Hướng dẫn đặt tour</div>
+      <div class="padding-top-5">Hướng dẫn thanh toán</div>
+      <div class="padding-top-5">Hướng dẫn đăng ký</div>
+      <div class="padding-top-5">Hướng dẫn đăng nhập</div>
+    </div>
+    <div class="d-flex flex-column padding-15">
+      <div class="font-bold">Liên hệ</div>
+      <div class="padding-top-5">Địa chỉ: Đường Trịnh Văn Bô, Nam Từ Liêm, Hà Nội</div>
+      <div class="padding-top-5">Email: dongatourist@gmail.com</div>
+      <div class="padding-top-5">Sđt: 09887237361</div>
+    </div>
+  </div>
+  <script src="../static/js/jquery.js"></script>
+  <script src="../static/js/custom.js"></script>
+</body>
+
 </html>
